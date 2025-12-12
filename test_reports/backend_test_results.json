@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-12T04:27:27.786976",
+  "timestamp": "2025-12-12T05:09:57.626486",
   "total_tests": 20,
   "passed_tests": 20,
   "success_rate": 100.0,
@@ -8,215 +8,386 @@
       "test_name": "Health Check",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.074893",
+      "timestamp": "2025-12-12T05:09:53.461359",
       "response_data": {
         "status": "healthy",
         "system": "AEGIS MIND",
         "version": "1.0.0",
-        "timestamp": "2025-12-12T04:27:23.071788+00:00"
+        "timestamp": "2025-12-12T05:09:53.457108+00:00"
       }
     },
     {
       "test_name": "Health Check - Response Format",
       "success": true,
       "details": "System: AEGIS MIND, Status: healthy",
-      "timestamp": "2025-12-12T04:27:23.075358",
+      "timestamp": "2025-12-12T05:09:53.461807",
       "response_data": null
     },
     {
       "test_name": "Get Emitters",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.115819",
+      "timestamp": "2025-12-12T05:09:53.497531",
       "response_data": [
         {
-          "name": "Type 346B - PLAN Destroyer",
+          "name": "Xiang Yang Hong 03 - Research Vessel",
           "emitter_type": "radar",
           "platform": "ship",
-          "origin": "China",
-          "threat_level": "critical",
-          "frequency_min": 3100,
-          "frequency_max": 3500,
-          "prf": 3000,
-          "pulse_width": 1.5,
-          "modulation_type": "pulse",
-          "latitude": 25.2,
-          "longitude": 120.5,
-          "affiliation": "hostile",
-          "id": "2e420467-f593-4f42-97fb-045bdfd24542"
-        },
-        {
-          "name": "YLC-8B Early Warning",
-          "emitter_type": "radar",
-          "platform": "ground",
           "origin": "China",
           "threat_level": "high",
-          "frequency_min": 1200,
-          "frequency_max": 1400,
-          "prf": 500,
-          "pulse_width": 50,
+          "frequency_min": 2800,
+          "frequency_max": 3200,
+          "prf": 2000,
+          "pulse_width": 2.0,
           "modulation_type": "pulse",
-          "latitude": 25.8,
-          "longitude": 119.2,
-          "affiliation": "hostile",
-          "id": "5d7dac6a-2998-400b-ad42-e1638bce42a0"
+          "latitude": 3.85,
+          "longitude": 100.2,
+          "affiliation": "unknown",
+          "description": "Chinese 'research vessel' conducting surveys with unusual radar emissions",
+          "id": "76f70fcb-6d54-4089-85c7-f2ddf606dee7"
         },
         {
-          "name": "DF-21D Missile Seeker",
-          "emitter_type": "radar",
-          "platform": "missile",
-          "origin": "China",
-          "threat_level": "critical",
-          "frequency_min": 9000,
-          "frequency_max": 10000,
-          "prf": 10000,
-          "pulse_width": 0.5,
-          "modulation_type": "chirp",
-          "latitude": 25.5,
-          "longitude": 120.8,
+          "name": "MV Sinar Kudus - Pirate Mothership",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "high",
+          "frequency_min": 156.0,
+          "frequency_max": 157.0,
+          "modulation_type": "FM",
+          "latitude": 4.12,
+          "longitude": 100.45,
           "affiliation": "hostile",
-          "id": "e5e962ba-b819-4bca-9bca-8e00b929e40b"
+          "description": "Suspected pirate mothership using encrypted VHF for coordination",
+          "id": "c8548e42-e9fd-4f39-8a3b-7e4e1c2eaf69"
         },
         {
-          "name": "USS Gerald Ford - SPY-6",
+          "name": "Vietnamese Fishing Fleet - GPS Spoofed",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Vietnam",
+          "threat_level": "medium",
+          "frequency_min": 1575.0,
+          "frequency_max": 1580.0,
+          "modulation_type": "spread_spectrum",
+          "latitude": 4.35,
+          "longitude": 100.8,
+          "affiliation": "unknown",
+          "description": "Fishing vessels with disabled AIS in Malaysian EEZ",
+          "id": "df32fccf-5afa-4547-a3eb-0e288eb49817"
+        },
+        {
+          "name": "KD Lekiu - TLDM Frigate",
           "emitter_type": "radar",
           "platform": "ship",
-          "origin": "USA",
+          "origin": "Malaysia",
           "threat_level": "low",
-          "frequency_min": 2900,
-          "frequency_max": 3100,
-          "prf": 4000,
-          "pulse_width": 1.0,
+          "frequency_min": 8500,
+          "frequency_max": 9500,
+          "prf": 3500,
+          "pulse_width": 0.5,
           "modulation_type": "pulse",
-          "latitude": 24.8,
-          "longitude": 121.2,
+          "latitude": 4.0,
+          "longitude": 100.3,
           "affiliation": "friendly",
-          "id": "ef7fac02-88c3-43b1-a080-ec55ad573ff3"
+          "description": "TLDM patrol vessel on OP PASIR duty",
+          "id": "82d83758-1c56-438f-afc8-35afa10227ca"
         },
         {
-          "name": "E-2D Hawkeye AEW",
+          "name": "Lumut EW Station",
           "emitter_type": "radar",
-          "platform": "aircraft",
-          "origin": "USA",
+          "platform": "ground",
+          "origin": "Malaysia",
           "threat_level": "low",
-          "frequency_min": 400,
-          "frequency_max": 450,
-          "prf": 300,
-          "pulse_width": 10,
+          "frequency_min": 1200,
+          "frequency_max": 1400,
+          "prf": 400,
+          "pulse_width": 20,
           "modulation_type": "pulse",
-          "latitude": 24.5,
-          "longitude": 122.0,
+          "latitude": 4.24,
+          "longitude": 100.62,
           "affiliation": "friendly",
-          "id": "64017d47-e789-41c7-b5d9-08927faa08b6"
+          "description": "Coastal surveillance radar station",
+          "id": "e6161004-cafb-4da3-8605-89d6e77f2c36"
         },
         {
-          "name": "DJI Mavic Control Link",
+          "name": "Abu Sayyaf Comms - Baofeng Radio",
+          "emitter_type": "communication",
+          "platform": "ground",
+          "origin": "Philippines",
+          "threat_level": "critical",
+          "frequency_min": 400.0,
+          "frequency_max": 470.0,
+          "modulation_type": "FM",
+          "latitude": 4.45,
+          "longitude": 118.65,
+          "affiliation": "hostile",
+          "description": "KFR group using commercial radio with rudimentary encryption",
+          "id": "5584d52d-a9f9-4375-964b-85f2a1a02a24"
+        },
+        {
+          "name": "Panther Boat - Sat Phone Burst",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "high",
+          "frequency_min": 1616.0,
+          "frequency_max": 1626.5,
+          "modulation_type": "TDMA",
+          "latitude": 4.52,
+          "longitude": 118.8,
+          "affiliation": "hostile",
+          "description": "Fast smuggling boat with intermittent Iridium satellite phone",
+          "id": "d2f9da16-aab0-4db1-8ba0-38a263615c5c"
+        },
+        {
+          "name": "Recon Drone - DJI Controller",
           "emitter_type": "communication",
           "platform": "uav",
           "origin": "Unknown",
-          "threat_level": "medium",
+          "threat_level": "high",
           "frequency_min": 2400,
           "frequency_max": 2483,
           "modulation_type": "FHSS",
-          "latitude": 50.45,
-          "longitude": 30.52,
+          "latitude": 4.48,
+          "longitude": 118.72,
           "affiliation": "hostile",
-          "id": "aad2594a-bedf-4417-9c1f-ef7897acda3a"
+          "description": "Modified DJI drone for pre-raid ISR of ESSCOM bases",
+          "id": "30afd41d-6f85-4a78-963e-32d0b5bb96eb"
         },
         {
-          "name": "Orlan-10 Datalink",
+          "name": "ESSCOM Command Post",
           "emitter_type": "communication",
-          "platform": "uav",
-          "origin": "Russia",
-          "threat_level": "high",
-          "frequency_min": 868,
-          "frequency_max": 915,
-          "modulation_type": "FM",
-          "latitude": 50.48,
-          "longitude": 30.55,
-          "affiliation": "hostile",
-          "id": "0bb90dad-e5f3-4a2f-bdcd-4316ab76e2b2"
+          "platform": "ground",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 225.0,
+          "frequency_max": 400.0,
+          "modulation_type": "encrypted",
+          "latitude": 4.47,
+          "longitude": 118.1,
+          "affiliation": "friendly",
+          "description": "Eastern Security Command tactical communications",
+          "id": "f6733cb5-9271-47d1-8934-c5e5c7adbf75"
         },
         {
-          "name": "S-400 Engagement Radar",
-          "emitter_type": "radar",
-          "platform": "ground",
-          "origin": "Russia",
+          "name": "Aerodyne Counter-UAV",
+          "emitter_type": "jammer",
+          "platform": "uav",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 2400,
+          "frequency_max": 5800,
+          "modulation_type": "broadband",
+          "latitude": 4.46,
+          "longitude": 118.15,
+          "affiliation": "friendly",
+          "description": "Malaysian-made drone with lightweight jammer payload",
+          "id": "f67ed415-878a-442a-a6f5-b0a8d83c42f2"
+        },
+        {
+          "name": "CCG 5901 - Coast Guard Cutter",
+          "emitter_type": "jammer",
+          "platform": "ship",
+          "origin": "China",
           "threat_level": "critical",
-          "frequency_min": 2000,
-          "frequency_max": 4000,
-          "prf": 8000,
+          "frequency_min": 100.0,
+          "frequency_max": 500.0,
+          "modulation_type": "noise",
+          "latitude": 5.82,
+          "longitude": 112.15,
+          "affiliation": "hostile",
+          "description": "World's largest coast guard ship with advanced EW suite jamming MAF comms",
+          "id": "0c8f10c6-fef7-4dd5-af54-3fe51e6b0976"
+        },
+        {
+          "name": "Maritime Militia Flotilla",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "China",
+          "threat_level": "high",
+          "frequency_min": 156.0,
+          "frequency_max": 163.0,
+          "modulation_type": "FM",
+          "latitude": 5.75,
+          "longitude": 112.3,
+          "affiliation": "hostile",
+          "description": "'Little Blue Men' civilian vessels creating spectrum chaos",
+          "id": "cdb62199-1154-4a8f-9f05-c6c92d834946"
+        },
+        {
+          "name": "H-6K Elint Aircraft",
+          "emitter_type": "radar",
+          "platform": "aircraft",
+          "origin": "China",
+          "threat_level": "critical",
+          "frequency_min": 8000,
+          "frequency_max": 12000,
+          "prf": 5000,
+          "pulse_width": 0.3,
+          "modulation_type": "chirp",
+          "latitude": 6.1,
+          "longitude": 112.5,
+          "affiliation": "hostile",
+          "description": "Electronic reconnaissance aircraft probing MAF air defense",
+          "id": "ffeeb9d7-477a-4935-b103-04d585073b37"
+        },
+        {
+          "name": "KD Keris - LCS Patrol",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 9000,
+          "frequency_max": 9500,
+          "prf": 4000,
+          "pulse_width": 0.4,
+          "modulation_type": "pulse",
+          "latitude": 5.65,
+          "longitude": 112.0,
+          "affiliation": "friendly",
+          "description": "Littoral Combat Ship with Thales NS 100 radar",
+          "id": "65ccfcbc-58cd-411c-858f-def9619e622d"
+        },
+        {
+          "name": "F/A-18D Hornet - TUDM",
+          "emitter_type": "radar",
+          "platform": "aircraft",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 8500,
+          "frequency_max": 10500,
+          "prf": 6000,
           "pulse_width": 0.2,
           "modulation_type": "pulse",
-          "latitude": 50.6,
-          "longitude": 30.3,
-          "affiliation": "hostile",
-          "id": "f743fc27-e05d-49c5-bf03-44a3476c9ccf"
+          "latitude": 5.9,
+          "longitude": 111.8,
+          "affiliation": "friendly",
+          "description": "TUDM fighter with SUPER NASA radar on air defense patrol",
+          "id": "9937465f-e5e2-4eb4-834a-4c76e41146ce"
+        },
+        {
+          "name": "Kasawari Gas Platform",
+          "emitter_type": "communication",
+          "platform": "ground",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 450.0,
+          "frequency_max": 470.0,
+          "modulation_type": "digital",
+          "latitude": 5.7,
+          "longitude": 111.95,
+          "affiliation": "friendly",
+          "description": "PETRONAS critical infrastructure requiring EW protection",
+          "id": "7cc46611-8ebb-4cf2-b52c-0d38e82e9bd4"
         }
       ]
     },
     {
       "test_name": "Emitters - Data Format",
       "success": true,
-      "details": "Found 8 emitters",
-      "timestamp": "2025-12-12T04:27:23.116343",
+      "details": "Found 16 emitters",
+      "timestamp": "2025-12-12T05:09:53.497958",
       "response_data": null
     },
     {
       "test_name": "Emitters - Structure",
       "success": true,
-      "details": "Sample: Type 346B - PLAN Destroyer (hostile)",
-      "timestamp": "2025-12-12T04:27:23.116364",
+      "details": "Sample: Xiang Yang Hong 03 - Research Vessel (unknown)",
+      "timestamp": "2025-12-12T05:09:53.497978",
       "response_data": null
     },
     {
       "test_name": "Get Scenarios",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.155984",
+      "timestamp": "2025-12-12T05:09:53.534872",
       "response_data": [
         {
           "id": "scenario_1",
-          "name": "Carrier Strike Group Defense",
-          "description": "USS Gerald Ford transiting Taiwan Strait under threat from PLAN naval forces and coastal defense systems",
-          "region": "Taiwan Strait",
-          "center_lat": 25.0,
-          "center_lng": 121.0,
-          "zoom": 7,
+          "name": "Selat Melaka Guardian",
+          "name_bm": "Penjaga Selat Melaka",
+          "description": "Maritime Domain Awareness & Anti-Piracy operations in the critical Malacca Strait choke point between Port Klang and Pulau Pinang",
+          "region": "Selat Melaka (Malacca Strait)",
+          "center_lat": 4.0,
+          "center_lng": 100.4,
+          "zoom": 8,
           "emitters": [
-            "Type 346B - PLAN Destroyer",
-            "YLC-8B Early Warning",
-            "DF-21D Missile Seeker",
-            "USS Gerald Ford - SPY-6",
-            "E-2D Hawkeye AEW"
+            "Xiang Yang Hong 03 - Research Vessel",
+            "MV Sinar Kudus - Pirate Mothership",
+            "Vietnamese Fishing Fleet - GPS Spoofed",
+            "KD Lekiu - TLDM Frigate",
+            "Lumut EW Station"
           ],
-          "threat_summary": "Multiple surface and air defense radars tracking friendly forces. Anti-ship ballistic missile threat detected."
+          "threat_summary": "Multi-threat environment: State actor ISR (Chinese research vessel), pirate mothership coordinating fast boat attacks, illegal fishing with GPS spoofing. Support OP PASIR and MMEA cooperation.",
+          "ew_focus": [
+            "Electronic Support (ES)",
+            "COMINT/DF",
+            "AIS Correlation",
+            "Pattern of Life Analysis"
+          ],
+          "operations": [
+            "OP PASIR",
+            "MMEA Joint Ops"
+          ]
         },
         {
           "id": "scenario_2",
-          "name": "Urban EW - Drone Defense",
-          "description": "Urban defense against commercial drone swarm modified for ISR and attack operations",
-          "region": "Kyiv, Ukraine",
-          "center_lat": 50.45,
-          "center_lng": 30.52,
+          "name": "Rajawali Shield",
+          "name_bm": "Perisai Rajawali",
+          "description": "Sabah Eastern Security Command (ESSCOM) border surveillance against KFR groups, smuggling networks, and intrusion drones in ESSZONE from Semporna to Tawau",
+          "region": "ESSZONE - Sabah Timur",
+          "center_lat": 4.48,
+          "center_lng": 118.5,
           "zoom": 10,
           "emitters": [
-            "DJI Mavic Control Link",
-            "Orlan-10 Datalink",
-            "S-400 Engagement Radar"
+            "Abu Sayyaf Comms - Baofeng Radio",
+            "Panther Boat - Sat Phone Burst",
+            "Recon Drone - DJI Controller",
+            "ESSCOM Command Post",
+            "Aerodyne Counter-UAV"
           ],
-          "threat_summary": "50+ drones detected. Mix of commercial and military UAVs. Long-range SAM threat from north."
+          "threat_summary": "Asymmetric threats: Abu Sayyaf/ISSP-linked militants using encrypted commercial radios, smuggling boats running dark, reconnaissance drones targeting ESSCOM bases. Direct support to OP SABAH TIMUR.",
+          "ew_focus": [
+            "Low-Cost Portable EW",
+            "KFR Pattern Recognition",
+            "Cyber-EW Convergence",
+            "Counter-UAV"
+          ],
+          "operations": [
+            "OP SABAH TIMUR",
+            "ESSCOM Border Ops"
+          ]
         },
         {
           "id": "scenario_3",
-          "name": "Spectrum Management - Contested",
-          "description": "Multi-domain operations with congested spectrum requiring dynamic frequency management",
-          "region": "Baltic Sea",
-          "center_lat": 57.0,
-          "center_lng": 20.0,
-          "zoom": 6,
-          "emitters": [],
-          "threat_summary": "Heavy electromagnetic congestion. Multiple friendly and hostile emitters competing for spectrum access."
+          "name": "Nusantara Spectrum",
+          "name_bm": "Spektrum Nusantara",
+          "description": "South China Sea sovereignty patrol and strategic deterrence near Beting Patinggi Ali (Luconia Shoals) and Kasawari gas field, protecting Malaysian EEZ",
+          "region": "Laut China Selatan (SCS) - Malaysian EEZ",
+          "center_lat": 5.8,
+          "center_lng": 112.1,
+          "zoom": 8,
+          "emitters": [
+            "CCG 5901 - Coast Guard Cutter",
+            "Maritime Militia Flotilla",
+            "H-6K Elint Aircraft",
+            "KD Keris - LCS Patrol",
+            "F/A-18D Hornet - TUDM",
+            "Kasawari Gas Platform"
+          ],
+          "threat_summary": "High-end state actor threat: CCG ships with advanced jammers, 'Little Blue Men' creating spectrum chaos, H-6K electronic reconnaissance probing air defense, need to protect PETRONAS Kasawari gas field.",
+          "ew_focus": [
+            "Electronic Protection (EP)",
+            "Joint Spectrum Management",
+            "Counter-ISR",
+            "Diplomatic Evidence Collection"
+          ],
+          "operations": [
+            "TLDM Sovereignty Patrol",
+            "TUDM Air Defense",
+            "PETRONAS Protection"
+          ]
         }
       ]
     },
@@ -224,118 +395,132 @@
       "test_name": "Scenarios - Data Format",
       "success": true,
       "details": "Found 3 scenarios",
-      "timestamp": "2025-12-12T04:27:23.156472",
+      "timestamp": "2025-12-12T05:09:53.535296",
       "response_data": null
     },
     {
       "test_name": "Scenarios - Structure",
       "success": true,
-      "details": "Sample: Carrier Strike Group Defense in Taiwan Strait",
-      "timestamp": "2025-12-12T04:27:23.156492",
+      "details": "Sample: Selat Melaka Guardian in Selat Melaka (Malacca Strait)",
+      "timestamp": "2025-12-12T05:09:53.535324",
       "response_data": null
     },
     {
       "test_name": "Threat Assessment",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.193144",
+      "timestamp": "2025-12-12T05:09:53.571627",
       "response_data": {
-        "total_threats": 6,
-        "critical_count": 5,
+        "total_threats": 7,
+        "critical_count": 7,
         "assessments": [
           {
             "emitter_id": "unknown",
-            "emitter_name": "Type 346B - PLAN Destroyer",
-            "threat_score": 1.0,
-            "kill_chain_phase": "detection",
-            "time_to_impact": 80.84597265141349,
-            "recommended_actions": [
-              "Activate ECM",
-              "Deploy decoys",
-              "Maneuver to minimize exposure"
-            ],
-            "assessed_at": "2025-12-12T04:27:23.189995+00:00"
-          },
-          {
-            "emitter_id": "unknown",
-            "emitter_name": "DF-21D Missile Seeker",
+            "emitter_name": "Abu Sayyaf Comms - Baofeng Radio",
             "threat_score": 1.0,
             "kill_chain_phase": "tracking",
-            "time_to_impact": 45.775849401340864,
+            "time_to_impact": 55.77229474515623,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T04:27:23.190009+00:00"
+            "assessed_at": "2025-12-12T05:09:53.568657+00:00"
           },
           {
             "emitter_id": "unknown",
-            "emitter_name": "S-400 Engagement Radar",
+            "emitter_name": "CCG 5901 - Coast Guard Cutter",
             "threat_score": 1.0,
-            "kill_chain_phase": "detection",
-            "time_to_impact": 83.82935697720124,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 83.11641839463135,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T04:27:23.190018+00:00"
+            "assessed_at": "2025-12-12T05:09:53.568667+00:00"
           },
           {
             "emitter_id": "unknown",
-            "emitter_name": "YLC-8B Early Warning",
+            "emitter_name": "H-6K Elint Aircraft",
+            "threat_score": 1.0,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 159.81852788873226,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T05:09:53.568672+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "MV Sinar Kudus - Pirate Mothership",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 66.28333827580389,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T05:09:53.568649+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "Panther Boat - Sat Phone Burst",
             "threat_score": 0.8999999999999999,
             "kill_chain_phase": "tracking",
-            "time_to_impact": 172.11751441800118,
+            "time_to_impact": 107.78664900845888,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T04:27:23.190006+00:00"
+            "assessed_at": "2025-12-12T05:09:53.568661+00:00"
           },
           {
             "emitter_id": "unknown",
-            "emitter_name": "Orlan-10 Datalink",
+            "emitter_name": "Recon Drone - DJI Controller",
             "threat_score": 0.8999999999999999,
             "kill_chain_phase": "detection",
-            "time_to_impact": 149.4249636213731,
+            "time_to_impact": 105.80587288702678,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T04:27:23.190015+00:00"
+            "assessed_at": "2025-12-12T05:09:53.568664+00:00"
           },
           {
             "emitter_id": "unknown",
-            "emitter_name": "DJI Mavic Control Link",
-            "threat_score": 0.6,
+            "emitter_name": "Maritime Militia Flotilla",
+            "threat_score": 0.8999999999999999,
             "kill_chain_phase": "detection",
-            "time_to_impact": null,
+            "time_to_impact": 284.141769152489,
             "recommended_actions": [
-              "Continue monitoring",
-              "Prepare countermeasures"
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T04:27:23.190012+00:00"
+            "assessed_at": "2025-12-12T05:09:53.568669+00:00"
           }
         ],
-        "timestamp": "2025-12-12T04:27:23.190024+00:00"
+        "timestamp": "2025-12-12T05:09:53.568677+00:00"
       }
     },
     {
       "test_name": "Threats - Structure",
       "success": true,
-      "details": "Total: 6, Critical: 5",
-      "timestamp": "2025-12-12T04:27:23.193641",
+      "details": "Total: 7, Critical: 7",
+      "timestamp": "2025-12-12T05:09:53.572049",
       "response_data": null
     },
     {
       "test_name": "Get Countermeasures",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.229676",
+      "timestamp": "2025-12-12T05:09:53.606400",
       "response_data": [
         {
           "name": "AN/SLQ-32 Mode 4",
@@ -408,52 +593,53 @@
       "test_name": "Countermeasures - Data Format",
       "success": true,
       "details": "Found 5 countermeasures",
-      "timestamp": "2025-12-12T04:27:23.230090",
+      "timestamp": "2025-12-12T05:09:53.606835",
       "response_data": null
     },
     {
       "test_name": "Countermeasures - Structure",
       "success": true,
       "details": "Sample: AN/SLQ-32 Mode 4 (jamming)",
-      "timestamp": "2025-12-12T04:27:23.230111",
+      "timestamp": "2025-12-12T05:09:53.606857",
       "response_data": null
     },
     {
       "test_name": "System Metrics",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:23.267483",
+      "timestamp": "2025-12-12T05:09:53.641989",
       "response_data": {
-        "emitters_tracked": 8,
-        "hostile_count": 6,
-        "friendly_count": 2,
+        "emitters_tracked": 16,
+        "hostile_count": 7,
+        "friendly_count": 7,
         "classification_accuracy": 0.947,
-        "processing_latency_ms": 29,
-        "threat_assessment_ms": 95,
-        "ai_response_ms": 342,
-        "uptime_hours": 165,
-        "signals_processed_24h": 89579,
-        "timestamp": "2025-12-12T04:27:23.264263+00:00"
+        "processing_latency_ms": 40,
+        "threat_assessment_ms": 56,
+        "ai_response_ms": 413,
+        "uptime_hours": 490,
+        "signals_processed_24h": 90339,
+        "timestamp": "2025-12-12T05:09:53.638495+00:00"
       }
     },
     {
       "test_name": "Metrics - Structure",
       "success": true,
-      "details": "Tracked: 8, Hostile: 6, Accuracy: 94.7%",
-      "timestamp": "2025-12-12T04:27:23.267940",
+      "details": "Tracked: 16, Hostile: 7, Accuracy: 94.7%",
+      "timestamp": "2025-12-12T05:09:53.642461",
       "response_data": null
     },
     {
       "test_name": "AI Chat",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:27.655529",
+      "timestamp": "2025-12-12T05:09:57.552600",
       "response_data": {
-        "response": "**THREAT STATUS: ELEVATED**\n\n*   **Hostile Emitters:** 3 (all identified as radar systems).\n*   **Total Active Emitters:** 5.\n*   **Threat Type:** Radar.\n*   **Confidence:** HIGH (based on direct emitter count and classification).\n\n**Recommendation:** Maintain active monitoring. Initiate passive collection and SIGINT analysis on hostile radar emissions to determine specific radar function (e.g., search, track, fire control) and intent. Prioritize spectrum analysis for frequency hopping or LPI indicators.",
+        "response": "Current threat status: **MODERATE - ELEVATED.**\n\nFive (5) active emitters detected within AOR. One (1) confirmed hostile emitter identified, displaying both communication and radar threat characteristics.\n\nConfidence Level: HIGH (based on verified emitter identification and library correlation).\n\nRecommended Action:\n1.  Maintain active monitoring; intensify ELINT/COMINT collection on identified hostile emitter.\n2.  Initiate passive geolocation on hostile emitter to refine origin and trajectory.\n3.  Advise nearest ATM asset (e.g., LCS, F/A-18D CAP) to maintain EMCON Level 2 (Radio Silence, Radar Passive) and stand by for further tasking.\n4.  Prepare for potential spectrum jamming or deception operations if escalation occurs.\n\nCost Implication: Minimal. Primarily involves operational tempo increase for EW assets and personnel. No direct asset deployment costs beyond routine patrols.",
         "context": {
           "active_emitters": 5,
-          "hostile_count": 3,
+          "hostile_count": 1,
           "threat_types": [
+            "communication",
             "radar"
           ],
           "current_scenario": "Active monitoring"
@@ -463,58 +649,101 @@
     {
       "test_name": "AI Chat - Structure",
       "success": true,
-      "details": "Response length: 509 chars, Context keys: ['active_emitters', 'hostile_count', 'threat_types', 'current_scenario']",
-      "timestamp": "2025-12-12T04:27:27.656212",
+      "details": "Response length: 893 chars, Context keys: ['active_emitters', 'hostile_count', 'threat_types', 'current_scenario']",
+      "timestamp": "2025-12-12T05:09:57.553257",
       "response_data": null
     },
     {
       "test_name": "Get Scenarios for Activation",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:27.732499",
+      "timestamp": "2025-12-12T05:09:57.590202",
       "response_data": [
         {
           "id": "scenario_1",
-          "name": "Carrier Strike Group Defense",
-          "description": "USS Gerald Ford transiting Taiwan Strait under threat from PLAN naval forces and coastal defense systems",
-          "region": "Taiwan Strait",
-          "center_lat": 25.0,
-          "center_lng": 121.0,
-          "zoom": 7,
+          "name": "Selat Melaka Guardian",
+          "name_bm": "Penjaga Selat Melaka",
+          "description": "Maritime Domain Awareness & Anti-Piracy operations in the critical Malacca Strait choke point between Port Klang and Pulau Pinang",
+          "region": "Selat Melaka (Malacca Strait)",
+          "center_lat": 4.0,
+          "center_lng": 100.4,
+          "zoom": 8,
           "emitters": [
-            "Type 346B - PLAN Destroyer",
-            "YLC-8B Early Warning",
-            "DF-21D Missile Seeker",
-            "USS Gerald Ford - SPY-6",
-            "E-2D Hawkeye AEW"
+            "Xiang Yang Hong 03 - Research Vessel",
+            "MV Sinar Kudus - Pirate Mothership",
+            "Vietnamese Fishing Fleet - GPS Spoofed",
+            "KD Lekiu - TLDM Frigate",
+            "Lumut EW Station"
           ],
-          "threat_summary": "Multiple surface and air defense radars tracking friendly forces. Anti-ship ballistic missile threat detected."
+          "threat_summary": "Multi-threat environment: State actor ISR (Chinese research vessel), pirate mothership coordinating fast boat attacks, illegal fishing with GPS spoofing. Support OP PASIR and MMEA cooperation.",
+          "ew_focus": [
+            "Electronic Support (ES)",
+            "COMINT/DF",
+            "AIS Correlation",
+            "Pattern of Life Analysis"
+          ],
+          "operations": [
+            "OP PASIR",
+            "MMEA Joint Ops"
+          ]
         },
         {
           "id": "scenario_2",
-          "name": "Urban EW - Drone Defense",
-          "description": "Urban defense against commercial drone swarm modified for ISR and attack operations",
-          "region": "Kyiv, Ukraine",
-          "center_lat": 50.45,
-          "center_lng": 30.52,
+          "name": "Rajawali Shield",
+          "name_bm": "Perisai Rajawali",
+          "description": "Sabah Eastern Security Command (ESSCOM) border surveillance against KFR groups, smuggling networks, and intrusion drones in ESSZONE from Semporna to Tawau",
+          "region": "ESSZONE - Sabah Timur",
+          "center_lat": 4.48,
+          "center_lng": 118.5,
           "zoom": 10,
           "emitters": [
-            "DJI Mavic Control Link",
-            "Orlan-10 Datalink",
-            "S-400 Engagement Radar"
+            "Abu Sayyaf Comms - Baofeng Radio",
+            "Panther Boat - Sat Phone Burst",
+            "Recon Drone - DJI Controller",
+            "ESSCOM Command Post",
+            "Aerodyne Counter-UAV"
           ],
-          "threat_summary": "50+ drones detected. Mix of commercial and military UAVs. Long-range SAM threat from north."
+          "threat_summary": "Asymmetric threats: Abu Sayyaf/ISSP-linked militants using encrypted commercial radios, smuggling boats running dark, reconnaissance drones targeting ESSCOM bases. Direct support to OP SABAH TIMUR.",
+          "ew_focus": [
+            "Low-Cost Portable EW",
+            "KFR Pattern Recognition",
+            "Cyber-EW Convergence",
+            "Counter-UAV"
+          ],
+          "operations": [
+            "OP SABAH TIMUR",
+            "ESSCOM Border Ops"
+          ]
         },
         {
           "id": "scenario_3",
-          "name": "Spectrum Management - Contested",
-          "description": "Multi-domain operations with congested spectrum requiring dynamic frequency management",
-          "region": "Baltic Sea",
-          "center_lat": 57.0,
-          "center_lng": 20.0,
-          "zoom": 6,
-          "emitters": [],
-          "threat_summary": "Heavy electromagnetic congestion. Multiple friendly and hostile emitters competing for spectrum access."
+          "name": "Nusantara Spectrum",
+          "name_bm": "Spektrum Nusantara",
+          "description": "South China Sea sovereignty patrol and strategic deterrence near Beting Patinggi Ali (Luconia Shoals) and Kasawari gas field, protecting Malaysian EEZ",
+          "region": "Laut China Selatan (SCS) - Malaysian EEZ",
+          "center_lat": 5.8,
+          "center_lng": 112.1,
+          "zoom": 8,
+          "emitters": [
+            "CCG 5901 - Coast Guard Cutter",
+            "Maritime Militia Flotilla",
+            "H-6K Elint Aircraft",
+            "KD Keris - LCS Patrol",
+            "F/A-18D Hornet - TUDM",
+            "Kasawari Gas Platform"
+          ],
+          "threat_summary": "High-end state actor threat: CCG ships with advanced jammers, 'Little Blue Men' creating spectrum chaos, H-6K electronic reconnaissance probing air defense, need to protect PETRONAS Kasawari gas field.",
+          "ew_focus": [
+            "Electronic Protection (EP)",
+            "Joint Spectrum Management",
+            "Counter-ISR",
+            "Diplomatic Evidence Collection"
+          ],
+          "operations": [
+            "TLDM Sovereignty Patrol",
+            "TUDM Air Defense",
+            "PETRONAS Protection"
+          ]
         }
       ]
     },
@@ -522,19 +751,19 @@
       "test_name": "Activate Scenario",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T04:27:27.786260",
+      "timestamp": "2025-12-12T05:09:57.625764",
       "response_data": {
         "scenario_id": "scenario_1",
         "status": "activated",
         "emitters_loaded": 5,
-        "timestamp": "2025-12-12T04:27:27.783130+00:00"
+        "timestamp": "2025-12-12T05:09:57.622975+00:00"
       }
     },
     {
       "test_name": "Scenario Activation - Structure",
       "success": true,
       "details": "Status: activated, Emitters loaded: 5",
-      "timestamp": "2025-12-12T04:27:27.786807",
+      "timestamp": "2025-12-12T05:09:57.626320",
       "response_data": null
     }
   ]
