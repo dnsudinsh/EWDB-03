@@ -86,16 +86,17 @@ const Dashboard = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#020617] flex items-center justify-center">
+      <div className="min-h-screen bg-[#0a1628] flex items-center justify-center">
         <div className="text-center">
           <div className="relative w-24 h-24 mx-auto mb-6">
-            <div className="absolute inset-0 border-2 border-sky-500/30 rounded-full"></div>
-            <div className="absolute inset-2 border-2 border-sky-500/50 rounded-full radar-sweep"></div>
-            <div className="absolute inset-4 border-2 border-sky-500 rounded-full"></div>
-            <Radar className="absolute inset-0 m-auto w-8 h-8 text-sky-500" />
+            <div className="absolute inset-0 border-2 border-teal-500/30 rounded-full"></div>
+            <div className="absolute inset-2 border-2 border-teal-500/50 rounded-full radar-sweep"></div>
+            <div className="absolute inset-4 border-2 border-teal-500 rounded-full"></div>
+            <Radar className="absolute inset-0 m-auto w-8 h-8 text-teal-500" />
           </div>
-          <h2 className="text-xl font-bold text-slate-100 tracking-wider uppercase">AEGIS MIND</h2>
-          <p className="text-sm text-slate-500 mt-2 font-mono">INITIALIZING SYSTEMS...</p>
+          <h2 className="text-xl font-bold text-slate-100 tracking-wider uppercase">PROJEK HALIMUN</h2>
+          <p className="text-sm text-slate-500 mt-2 font-mono">MEMULAKAN SISTEM...</p>
+          <p className="text-xs text-teal-500/60 mt-1 italic">Himpunan Analisis Lindungan Intelijen Medan Udara Negara</p>
         </div>
       </div>
     );
