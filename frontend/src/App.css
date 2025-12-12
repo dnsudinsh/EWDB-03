@@ -1,34 +1,164 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* AEGIS MIND - Custom Component Styles */
+
+.App {
+  min-height: 100vh;
+  background-color: #020617;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Threat level badges */
+.threat-critical {
+  @apply bg-red-500/20 text-red-400 border border-red-500/50;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.threat-high {
+  @apply bg-orange-500/20 text-orange-400 border border-orange-500/50;
 }
 
-.App-link {
-    color: #61dafb;
+.threat-medium {
+  @apply bg-yellow-500/20 text-yellow-400 border border-yellow-500/50;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.threat-low {
+  @apply bg-green-500/20 text-green-400 border border-green-500/50;
+}
+
+/* Affiliation badges */
+.affiliation-hostile {
+  @apply bg-red-500/20 text-red-400;
+}
+
+.affiliation-friendly {
+  @apply bg-sky-500/20 text-sky-400;
+}
+
+.affiliation-neutral {
+  @apply bg-slate-500/20 text-slate-400;
+}
+
+.affiliation-unknown {
+  @apply bg-amber-500/20 text-amber-400;
+}
+
+/* Map marker styles */
+.marker-hostile {
+  filter: hue-rotate(0deg) drop-shadow(0 0 6px rgba(239, 68, 68, 0.8));
+}
+
+.marker-friendly {
+  filter: hue-rotate(200deg) drop-shadow(0 0 6px rgba(14, 165, 233, 0.8));
+}
+
+.marker-unknown {
+  filter: hue-rotate(40deg) drop-shadow(0 0 6px rgba(245, 158, 11, 0.8));
+}
+
+/* Signal strength indicator */
+.signal-bar {
+  @apply h-1 rounded-full transition-all duration-300;
+}
+
+.signal-strong {
+  @apply bg-green-500;
+}
+
+.signal-medium {
+  @apply bg-yellow-500;
+}
+
+.signal-weak {
+  @apply bg-red-500;
+}
+
+/* Radar sweep animation */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+
+/* Blinking cursor for AI console */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: #0ea5e9;
+}
+
+/* Data grid lines */
+.data-grid {
+  background-image: 
+    linear-gradient(rgba(30, 41, 59, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 41, 59, 0.5) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Timeline connector */
+.timeline-connector {
+  @apply absolute left-4 top-8 bottom-0 w-px bg-slate-700;
+}
+
+.timeline-dot {
+  @apply absolute left-2.5 w-3 h-3 rounded-full border-2 border-slate-800;
+}
+
+.timeline-dot-critical {
+  @apply bg-red-500;
+}
+
+.timeline-dot-high {
+  @apply bg-orange-500;
+}
+
+.timeline-dot-info {
+  @apply bg-sky-500;
+}
+
+.timeline-dot-success {
+  @apply bg-green-500;
+}
+
+/* Metric card pulse */
+@keyframes metric-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(14, 165, 233, 0);
+  }
+}
+
+.metric-pulse {
+  animation: metric-pulse 2s infinite;
+}
+
+/* Loading skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #0f172a 25%,
+    #1e293b 50%,
+    #0f172a 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
