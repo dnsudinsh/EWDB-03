@@ -196,6 +196,30 @@ backend:
         comment: "COMPREHENSIVE TESTING COMPLETED: All 32 backend API tests passed (100% success rate). Verified all user-requested endpoints including all 3 PROJEK HALIMUN scenarios, AI chat with Malaysian context, AI analysis for emitters, countermeasures, threats assessment, emitters list, and scenario activation. Backend logs show no errors. AI integration with Gemini 2.5 Flash fully functional. System ready for production use."
 
 frontend:
+  - task: "Frontend Bug Fix Verification - Error Toast Spam"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "CANNOT TEST: Frontend bug verification is outside backend testing scope. User requested verification of error toast 'Gagal menyambung ke sistem HALIMUN' not appearing repeatedly. Backend APIs are all working correctly (32/32 tests passed, all returning HTTP 200 OK). No backend connection errors found in logs. This requires frontend/UI testing with Playwright which is not within backend testing agent capabilities."
+
+  - task: "Frontend Bug Fix Verification - Map Zoom Reset"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "testing"
+        comment: "CANNOT TEST: Frontend bug verification is outside backend testing scope. User requested verification that map zoom persists after user zooms in and doesn't reset during data refresh. This is a frontend UI behavior that requires Playwright testing which is not within backend testing agent capabilities. Backend APIs for data refresh are working correctly."
+
   - task: "Dashboard displays emitters on map"
     implemented: true
     working: true
