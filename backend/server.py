@@ -873,6 +873,17 @@ async def websocket_battlefield(websocket: WebSocket):
 # Include the router in the main app
 app.include_router(api_router)
 
+# Root-level health check for Kubernetes deployment
+@app.get("/health")
+async def root_health_check():
+    """Health check endpoint for Kubernetes liveness/readiness probes"""
+    return {
+        "status": "healthy",
+        "system": "AEGIS MIND",
+        "version": "1.0.0",
+        "timestamp": datetime.now(timezone.utc).isoformat()
+    }
+
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
