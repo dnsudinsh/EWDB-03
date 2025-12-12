@@ -288,7 +288,7 @@ const NavButton = ({ icon, active, onClick, tooltip, testId }) => (
     onClick={onClick}
     className={`w-10 h-10 flex items-center justify-center rounded-sm transition-all duration-150 group relative
       ${active 
-        ? 'bg-sky-500/20 text-sky-400 border border-sky-500/50' 
+        ? 'bg-teal-500/20 text-teal-400 border border-teal-500/50' 
         : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800'
       }`}
     data-testid={testId}
@@ -301,10 +301,11 @@ const NavButton = ({ icon, active, onClick, tooltip, testId }) => (
 // Metric Badge Component
 const MetricBadge = ({ label, value, color, testId }) => {
   const colorClasses = {
-    sky: 'bg-sky-500/20 text-sky-400 border-sky-500/50',
+    teal: 'bg-teal-500/20 text-teal-400 border-teal-500/50',
     red: 'bg-red-500/20 text-red-400 border-red-500/50',
-    green: 'bg-green-500/20 text-green-400 border-green-500/50',
+    green: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50',
     amber: 'bg-amber-500/20 text-amber-400 border-amber-500/50',
+    sky: 'bg-sky-500/20 text-sky-400 border-sky-500/50',
   };
 
   return (
