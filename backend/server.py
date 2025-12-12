@@ -709,95 +709,260 @@ SAMPLE_EMITTERS = [
         "pass_time_minutes": 15
     }
 ]
-        "modulation_type": "FM",
-        "latitude": 4.45,
-        "longitude": 118.65,
-        "affiliation": "hostile",
-        "description": "KFR group using commercial radio with rudimentary encryption"
+
+SAMPLE_COUNTERMEASURES = [
+    # Demo 1: Selat Melaka Guardian Countermeasures
+    {
+        "name": "Lumut EW Station Triangulation",
+        "technique_type": "detection",
+        "description": "Multi-site DF from Lumut, Langkawi, and Johor triangulates pirate communications within 2° accuracy",
+        "success_rate": 0.88,
+        "resource_cost": "medium",
+        "applicable_threats": ["communication", "vhf_radio", "hf_ssb", "satphone"],
+        "side_effects": "Requires coordination across 3 stations",
+        "scenario": "selat_melaka"
     },
     {
-        "name": "Panther Boat - Sat Phone Burst",
-        "emitter_type": "communication",
-        "platform": "ship",
-        "origin": "Unknown",
-        "threat_level": "high",
-        "frequency_min": 1616.0,
-        "frequency_max": 1626.5,
-        "modulation_type": "TDMA",
-        "latitude": 4.52,
-        "longitude": 118.8,
-        "affiliation": "hostile",
-        "description": "Fast smuggling boat with intermittent Iridium satellite phone"
+        "name": "AIS Correlation Engine",
+        "technique_type": "detection",
+        "description": "AI correlates AIS signals with radar returns to identify vessels with spoofed or disabled transponders",
+        "success_rate": 0.92,
+        "resource_cost": "low",
+        "applicable_threats": ["ais_spoofing", "pirate_vessel"],
+        "side_effects": "2% false positive rate",
+        "scenario": "selat_melaka"
     },
     {
-        "name": "Recon Drone - DJI Controller",
-        "emitter_type": "communication",
-        "platform": "uav",
-        "origin": "Unknown",
-        "threat_level": "high",
-        "frequency_min": 2400,
-        "frequency_max": 2483,
-        "modulation_type": "FHSS",
-        "latitude": 4.48,
-        "longitude": 118.72,
-        "affiliation": "hostile",
-        "description": "Modified DJI drone for pre-raid ISR of ESSCOM bases"
+        "name": "Piracy Risk Index Calculator",
+        "technique_type": "intelligence",
+        "description": "ML model considering moon phase, weather, recent incidents to predict piracy risk level",
+        "success_rate": 0.78,
+        "resource_cost": "low",
+        "applicable_threats": ["piracy"],
+        "side_effects": "None - predictive only",
+        "scenario": "selat_melaka"
     },
     {
-        "name": "ESSCOM Command Post",
-        "emitter_type": "communication",
-        "platform": "ground",
-        "origin": "Malaysia",
-        "threat_level": "low",
-        "frequency_min": 225.0,
-        "frequency_max": 400.0,
-        "modulation_type": "encrypted",
-        "latitude": 4.47,
-        "longitude": 118.1,
-        "affiliation": "friendly",
-        "description": "Eastern Security Command tactical communications"
+        "name": "VHF Selective Jammer",
+        "technique_type": "jamming",
+        "description": "Broadcast targeted VHF jam on pirate frequencies only, preserving legitimate maritime traffic",
+        "success_rate": 0.82,
+        "resource_cost": "medium",
+        "applicable_threats": ["pirate_coordination"],
+        "side_effects": "Risk of collateral interference within 5km",
+        "scenario": "selat_melaka"
     },
     {
-        "name": "Aerodyne Counter-UAV",
-        "emitter_type": "jammer",
-        "platform": "uav",
-        "origin": "Malaysia",
-        "threat_level": "low",
-        "frequency_min": 2400,
-        "frequency_max": 5800,
-        "modulation_type": "broadband",
-        "latitude": 4.46,
-        "longitude": 118.15,
-        "affiliation": "friendly",
-        "description": "Malaysian-made drone with lightweight jammer payload"
+        "name": "ReCAAP Auto-Report Generator",
+        "technique_type": "intelligence",
+        "description": "Automatically generates POLIS reports for MMEA and updates ReCAAP ISC database in Singapore",
+        "success_rate": 0.95,
+        "resource_cost": "low",
+        "applicable_threats": ["piracy", "robbery"],
+        "side_effects": "None - administrative function",
+        "scenario": "selat_melaka"
     },
-    # ===== SCENARIO 3: NUSANTARA SPECTRUM - South China Sea =====
+    # Demo 2: Rajawali Shield Countermeasures  
     {
-        "name": "CCG 5901 - Coast Guard Cutter",
-        "emitter_type": "jammer",
-        "platform": "ship",
-        "origin": "China",
-        "threat_level": "critical",
-        "frequency_min": 100.0,
-        "frequency_max": 500.0,
-        "modulation_type": "noise",
-        "latitude": 5.82,
-        "longitude": 112.15,
-        "affiliation": "hostile",
-        "description": "World's largest coast guard ship with advanced EW suite jamming MAF comms"
+        "name": "Portable SDR Detector (RM 50K Kit)",
+        "technique_type": "detection",
+        "description": "LimeSDR Mini handheld system for MAF infantry - detects and locates transmitters in jungle/swamp terrain",
+        "success_rate": 0.75,
+        "resource_cost": "low",
+        "applicable_threats": ["kfr_comms", "smuggler_radio", "drone_controller"],
+        "side_effects": "48-hour battery, requires line of sight for best accuracy",
+        "scenario": "rajawali",
+        "cost_rm": 50000
     },
     {
-        "name": "Maritime Militia Flotilla",
-        "emitter_type": "communication",
-        "platform": "ship",
-        "origin": "China",
-        "threat_level": "high",
-        "frequency_min": 156.0,
-        "frequency_max": 163.0,
-        "modulation_type": "FM",
-        "latitude": 5.75,
-        "longitude": 112.3,
-        "affiliation": "hostile",
+        "name": "Voice Fingerprint Matcher",
+        "technique_type": "intelligence",
+        "description": "Audio fingerprinting identifies known KFR leaders from voice patterns with 87% confidence",
+        "success_rate": 0.87,
+        "resource_cost": "medium",
+        "applicable_threats": ["kfr_comms", "militant_coordination"],
+        "side_effects": "Requires existing voice database",
+        "scenario": "rajawali"
+    },
+    {
+        "name": "KFR Behavioral Predictor",
+        "technique_type": "intelligence",
+        "description": "ML model trained on 200+ historical KFR incidents - considers lunar cycle, weather, religious dates",
+        "success_rate": 0.82,
+        "resource_cost": "low",
+        "applicable_threats": ["kfr_attack"],
+        "side_effects": "None - predictive only",
+        "scenario": "rajawali"
+    },
+    {
+        "name": "Drone Frequency Jammer",
+        "technique_type": "jamming",
+        "description": "Targeted jamming of DJI control frequencies 2.4GHz only, preserving friendly comms",
+        "success_rate": 0.88,
+        "resource_cost": "medium",
+        "applicable_threats": ["drone_recon", "uav_controller"],
+        "side_effects": "Effective range 500m, may affect civilian WiFi",
+        "scenario": "rajawali"
+    },
+    {
+        "name": "Cyber-EW Malware Injection",
+        "technique_type": "cyber",
+        "description": "Inject tracking malware into captured militant devices to map entire KFR networks",
+        "success_rate": 0.70,
+        "resource_cost": "high",
+        "applicable_threats": ["kfr_network", "smuggling_network"],
+        "side_effects": "Risk of exposure, requires captured devices",
+        "scenario": "rajawali"
+    },
+    # Demo 3: Nusantara Spectrum Countermeasures
+    {
+        "name": "Frequency Agility Mode - NS 100",
+        "technique_type": "protection",
+        "description": "Rapid frequency hopping on Thales NS 100 radar to resist CCG barrage jamming",
+        "success_rate": 0.85,
+        "resource_cost": "low",
+        "applicable_threats": ["noise_jamming", "barrage_jamming"],
+        "side_effects": "10% reduced detection range during transitions",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "Satellite Comm Reroute",
+        "technique_type": "protection",
+        "description": "Re-route communications via MEASAT satellite, bypassing VHF jamming",
+        "success_rate": 0.95,
+        "resource_cost": "medium",
+        "applicable_threats": ["vhf_jamming", "communication_denial"],
+        "side_effects": "Increased latency, bandwidth limited",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "Electronic Decoy Generator",
+        "technique_type": "deception",
+        "description": "Create false EM signatures making platform appear shutdown while operations continue",
+        "success_rate": 0.78,
+        "resource_cost": "medium",
+        "applicable_threats": ["satellite_isr", "sigint_collection"],
+        "side_effects": "Requires 30-minute setup time",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "EW Drone Mapper",
+        "technique_type": "intelligence",
+        "description": "Deploy small EW drones to map Chinese radar coverage patterns during confrontation",
+        "success_rate": 0.90,
+        "resource_cost": "high",
+        "applicable_threats": ["radar_mapping"],
+        "side_effects": "Drone may be captured/lost",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "AI Spectrum Deconfliction",
+        "technique_type": "coordination",
+        "description": "ML-driven spectrum allocation between TLDM, TUDM, MMEA to prevent friendly fratricide",
+        "success_rate": 0.92,
+        "resource_cost": "medium",
+        "applicable_threats": ["spectrum_congestion", "friendly_interference"],
+        "side_effects": "Requires real-time connectivity to all units",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "UNCLOS Evidence Package Generator",
+        "technique_type": "intelligence",
+        "description": "Automatically packages timestamped signal recordings, geolocation, AIS logs for MOFA diplomatic protests",
+        "success_rate": 0.95,
+        "resource_cost": "low",
+        "applicable_threats": ["sovereignty_intrusion", "eez_violation"],
+        "side_effects": "None - passive collection per UNCLOS Article 121",
+        "scenario": "nusantara"
+    },
+    {
+        "name": "Escalation Risk Calculator",
+        "technique_type": "intelligence",
+        "description": "Based on 100+ historical SCS encounters, predicts probability of escalation and recommends response level",
+        "success_rate": 0.85,
+        "resource_cost": "low",
+        "applicable_threats": ["ccg_confrontation", "militia_swarm"],
+        "side_effects": "Requires diplomatic policy input",
+        "scenario": "nusantara"
+    }
+]
+
+SCENARIOS = [
+    {
+        "id": "scenario_1",
+        "name": "SELAT MELAKA GUARDIAN",
+        "name_bm": "Penjaga Selat Melaka",
+        "description": "Maritime Domain Awareness & Anti-Piracy - Quick Win Demo showing how one EW station in Lumut can monitor the entire northern Malacca Strait",
+        "executive_hook": "Show how one EW station provides 10x situational awareness at 1/10th the cost of additional patrol vessels",
+        "region": "Selat Melaka (40NM NW of Pulau Pinang)",
+        "center_lat": 5.50,
+        "center_lng": 100.15,
+        "zoom": 9,
+        "time_setting": "0300H Tuesday - Peak shipping hours",
+        "emitters": ["KD Lekiu - TLDM Frigate", "KD Gempita - Lumut EW Station", "MMEA Kimanis - OPV", "ATR-72 MPA - En Route", "MV Ocean Trader - Distress", "Fast Attack Craft 1 - No AIS", "Fast Attack Craft 2 - No AIS", "SS Sunrise - Pirate Mothership", "Xiang Yang Hong 06 - Research Vessel", "VLCC TI Europe - Radar Fault"],
+        "threat_summary": "Multi-threat environment: Pirate attack in progress on container ship, Chinese ISR vessel conducting unusual surveys, commercial radar interference with Port Klang VTS",
+        "threat_layers": ["Piracy Activity", "State Actor ISR", "Accidental Interference"],
+        "ew_focus": ["Electronic Support (ES)", "COMINT/DF Triangulation", "AIS Correlation", "Pattern of Life Analysis"],
+        "operations": ["OP PASIR", "MMEA Joint Ops", "ReCAAP Coordination"],
+        "demo_duration_minutes": 7,
+        "key_metrics": {
+            "response_time_min": 4,
+            "false_positive_rate": 0.02,
+            "coverage_sq_km": 25000,
+            "station_cost_rm_year": 500000,
+            "patrol_vessel_cost_rm": 50000000
+        }
+    },
+    {
+        "id": "scenario_2", 
+        "name": "RAJAWALI SHIELD",
+        "name_bm": "Perisai Rajawali",
+        "description": "Sabah ESSCOM Border Surveillance - Tactical Demo showing how RM 50K handheld EW gives infantry same capability as RM 50M airborne system",
+        "executive_hook": "Show how a RM 50,000 handheld EW device gives infantry battalions in Sabah the same electronic sensing capability as airborne system",
+        "region": "ESSZONE Sector 4 (Semporna - Pulau Bum Bum)",
+        "center_lat": 4.48,
+        "center_lng": 118.68,
+        "zoom": 12,
+        "time_setting": "0200H Monsoon Season - Heavy rain, low visibility",
+        "emitters": ["11 RAD - Pulau Bum Bum", "PASKAL Team - Zodiac Insert", "EC-725 Caracal - Overwatch", "Tanjung Labian Radar", "KFR Signal 1 - Baofeng Encrypted", "KFR Pump Boat 1", "KFR Pump Boat 2", "Smuggler Burst Signal", "DJI Mavic 3 - Recon Drone"],
+        "threat_summary": "Asymmetric threats: Abu Sayyaf KFR cell with 6 militants in 2 pump boats, smuggling network using burst transmissions, reconnaissance drone 3rd day of pattern - attack imminent",
+        "threat_layers": ["Kidnap-for-Ransom (KFR) Team", "Smuggling Network", "Drone Reconnaissance"],
+        "ew_focus": ["Low-Cost Portable EW", "Audio Fingerprinting", "KFR Pattern Recognition", "Counter-UAV"],
+        "operations": ["OP SABAH TIMUR", "ESSCOM Border Ops"],
+        "demo_duration_minutes": 8,
+        "key_metrics": {
+            "kit_cost_rm": 50000,
+            "signal_detection_count": 47,
+            "suspicious_filtered": 3,
+            "civilian_filtered": 44,
+            "ransom_prevented_rm": 5000000
+        }
+    },
+    {
+        "id": "scenario_3",
+        "name": "NUSANTARA SPECTRUM",
+        "name_bm": "Spektrum Nusantara",
+        "description": "South China Sea Strategic Deterrence - Show how Malaysia defends SCS claims using electronic warfare as proportional, non-kinetic tool with diplomatic evidence collection",
+        "executive_hook": "Show how Malaysia can defend its South China Sea claims using EW as a proportional, non-kinetic tool that provides diplomatic evidence while protecting assets",
+        "region": "Malaysian EEZ (Kasawari Gas Field - Luconia Shoals)",
+        "center_lat": 5.80,
+        "center_lng": 112.10,
+        "zoom": 9,
+        "time_setting": "Current - Strategic confrontation in progress",
+        "emitters": ["KD Mahawangsa - AOR", "FA-18D Hornet 1 - CAP", "FA-18D Hornet 2 - CAP", "KD Rencong - Future LCS", "Platform Duyong-A - PETRONAS", "CCG 5901 - Mega Cutter", "Maritime Militia Vessel 1", "Maritime Militia Vessel 2", "Maritime Militia Vessel 3", "Maritime Militia Vessel 4", "Maritime Militia Vessel 5", "Maritime Militia Vessel 6", "Type 052D Kunming - Destroyer", "H-6K Elint Aircraft", "Yaogan Satellite - Overhead"],
+        "threat_summary": "High-end state actor threat: CCG 5901 actively jamming Malaysian VHF, 6 Maritime Militia vessels creating spectrum chaos, PLA Navy destroyer collecting radar signatures, satellite ISR pass in 15 minutes",
+        "threat_layers": ["CCG White Hull Pressure", "PLA Navy Shadowing", "Space-based ISR"],
+        "ew_focus": ["Electronic Protection (EP)", "Satellite Comms", "Electronic Deception", "Joint Spectrum Management", "Diplomatic Evidence Collection"],
+        "operations": ["TLDM Sovereignty Patrol", "TUDM Air Defense", "PETRONAS Critical Infrastructure Protection"],
+        "demo_duration_minutes": 10,
+        "key_metrics": {
+            "ew_operation_cost_rm": 250000,
+            "platform_production_loss_if_shutdown_rm": 25000000,
+            "escalation_probability": 0.34,
+            "intelligence_gathered": "14 new radar signatures, 3 new comm protocols"
+        }
+    }
+]
         "description": "'Little Blue Men' civilian vessels creating spectrum chaos"
     },
     {
