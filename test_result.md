@@ -201,27 +201,33 @@ backend:
 frontend:
   - task: "Frontend Bug Fix Verification - Error Toast Spam"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "testing"
         comment: "CANNOT TEST: Frontend bug verification is outside backend testing scope. User requested verification of error toast 'Gagal menyambung ke sistem HALIMUN' not appearing repeatedly. Backend APIs are all working correctly (32/32 tests passed, all returning HTTP 200 OK). No backend connection errors found in logs. This requires frontend/UI testing with Playwright which is not within backend testing agent capabilities."
+      - working: true
+        agent: "testing"
+        comment: "TESTED: Error toast spam bug is FIXED. Monitored dashboard for 30 seconds with Playwright automation - zero error toasts detected. No 'Gagal menyambung ke sistem HALIMUN' messages appeared during monitoring period. The connectionErrorShown state management and lastSuccessfulFetch logic in ResponsiveDashboard.jsx is working correctly to prevent toast spam. Dashboard loads properly with metrics (TRACKING: 48, HOSTILE: 19, FRIENDLY: 20) and data refreshes without error notifications."
 
   - task: "Frontend Bug Fix Verification - Map Zoom Reset"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "testing"
         comment: "CANNOT TEST: Frontend bug verification is outside backend testing scope. User requested verification that map zoom persists after user zooms in and doesn't reset during data refresh. This is a frontend UI behavior that requires Playwright testing which is not within backend testing agent capabilities. Backend APIs for data refresh are working correctly."
+      - working: true
+        agent: "testing"
+        comment: "TESTED: Map zoom persistence bug is FIXED. Used Playwright to zoom in on map (3 scroll wheel events) and monitored for 10 seconds during data refresh period. Visual verification through screenshots confirms: 1) Map successfully zoomed in showing more detailed view of Malaysia with emitters, 2) Zoom level persisted throughout monitoring period, 3) TTI values in threat panel updated (confirming data refresh occurred) while map zoom remained stable, 4) No reset to initial wide Malaysia view. The MapUpdater component's initialBoundsSet logic and emitter count change detection is working correctly to prevent zoom reset during routine data refreshes."
 
   - task: "Dashboard displays emitters on map"
     implemented: true
