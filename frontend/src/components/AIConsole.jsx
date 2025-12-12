@@ -12,7 +12,7 @@ const AIConsole = ({ selectedEmitter }) => {
   const [messages, setMessages] = useState([
     {
       role: "system",
-      content: "AEGIS MIND AI Assistant online. Ready to provide tactical EW analysis for ATM operations. Supporting TLDM, TUDM, TDM joint operations.",
+      content: "PROJEK HALIMUN AI online. Sedia untuk analisis taktikal EW bagi operasi ATM - TLDM, TUDM, TDM.",
       timestamp: new Date().toISOString()
     }
   ]);
@@ -23,11 +23,11 @@ const AIConsole = ({ selectedEmitter }) => {
 
   // Sample queries - MAF specific
   const sampleQueries = [
-    "What countermeasures for CCG jammers in SCS?",
-    "Analyze pirate activity in Selat Melaka",
-    "Recommend EW against Abu Sayyaf comms",
-    "Status PETRONAS Kasawari protection",
-    "Joint spectrum plan TLDM-TUDM"
+    "Situasi ancaman di Selat Melaka?",
+    "Cadangan ECM untuk CCG di SCS",
+    "Analisis isyarat KFR di Sabah",
+    "Status perlindungan Kasawari",
+    "Kos operasi EW vs kapal tambahan"
   ];
 
   useEffect(() => {
