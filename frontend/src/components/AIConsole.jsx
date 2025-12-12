@@ -12,7 +12,7 @@ const AIConsole = ({ selectedEmitter }) => {
   const [messages, setMessages] = useState([
     {
       role: "system",
-      content: "AEGIS MIND AI Assistant online. Ready to provide tactical EW analysis and recommendations.",
+      content: "AEGIS MIND AI Assistant online. Ready to provide tactical EW analysis for ATM operations. Supporting TLDM, TUDM, TDM joint operations.",
       timestamp: new Date().toISOString()
     }
   ]);
