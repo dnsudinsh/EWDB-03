@@ -113,7 +113,7 @@ const Dashboard = () => {
             </span>
           </div>
           <span className="text-xs text-slate-500 border-l border-slate-700 pl-4">
-            Electronic Warfare Decision Support System
+            Sistem Sokongan Keputusan EW - ATM
           </span>
         </div>
         
