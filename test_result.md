@@ -101,3 +101,171 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: Verify all three PROJEK HALIMUN scenarios (SELAT MELAKA GUARDIAN, RAJAWALI SHIELD, NUSANTARA SPECTRUM) are properly implemented with all features including AI Analisis functionality working correctly
+
+backend:
+  - task: "Scenario 1 - SELAT MELAKA GUARDIAN API"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Verified via curl - scenario_1 returns 10 emitters, activation works"
+
+  - task: "Scenario 2 - RAJAWALI SHIELD API"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "API returns scenario with KFR threats, PASKAL, 11 RAD emitters"
+
+  - task: "Scenario 3 - NUSANTARA SPECTRUM API"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "API returns SCS scenario with CCG, militia vessels, PETRONAS platform"
+
+  - task: "AI Chat endpoint"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Tested with curl - returns MAF tactical analysis in Bahasa Malaysia"
+
+  - task: "AI Analysis endpoint for emitters"
+    implemented: true
+    working: true
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Verified emitter lookup by name works - returns Gemini analysis"
+
+  - task: "Countermeasures API"
+    implemented: true
+    working: NA
+    file: "/app/backend/server.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: NA
+        agent: "main"
+        comment: "Needs verification - endpoint exists with scenario-specific countermeasures"
+
+frontend:
+  - task: "Dashboard displays emitters on map"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Screenshot confirms map shows Malaysia with emitters, legend displays"
+
+  - task: "Threat Panel shows hostile emitters"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/ThreatPanel.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Screenshot shows KFR threats with 100% threat levels, TTI, recommended actions"
+
+  - task: "Scenario Selector dropdown"
+    implemented: true
+    working: NA
+    file: "/app/frontend/src/components/ScenarioSelector.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: NA
+        agent: "main"
+        comment: "Need to test if dropdown opens and scenarios can be selected/activated"
+
+  - task: "AI Console chat functionality"
+    implemented: true
+    working: NA
+    file: "/app/frontend/src/components/AIConsole.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: NA
+        agent: "main"
+        comment: "Need to test chat input and AI responses in UI"
+
+  - task: "Emitter AI Analysis panel (Analisis)"
+    implemented: true
+    working: NA
+    file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: NA
+        agent: "main"
+        comment: "User request to verify Analisis functionality - need UI test"
+
+  - task: "Responsive design"
+    implemented: true
+    working: NA
+    file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: NA
+        agent: "main"
+        comment: "ResponsiveDashboard exists but needs testing across breakpoints"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: true
+
+test_plan:
+  current_focus:
+    - "Scenario Selector dropdown"
+    - "AI Console chat functionality"
+    - "Emitter AI Analysis panel (Analisis)"
+    - "Load all 3 scenarios and verify"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "User requested verification of all 3 demo scenarios (SELAT MELAKA GUARDIAN, RAJAWALI SHIELD, NUSANTARA SPECTRUM) and Analisis function. Backend APIs verified working via curl. Need UI testing for: 1) Scenario dropdown selection, 2) AI Chat in UI, 3) Emitter Analisis panel when clicking on emitter. Please test the full user flow."
