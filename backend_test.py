@@ -255,27 +255,60 @@ class AegisMindTester:
         
         return success
 
-    def test_scenario_activation(self):
-        """Test scenario activation"""
-        # First get available scenarios
-        success, scenarios = self.run_test("Get Scenarios for Activation", "GET", "scenarios")
-        if success and scenarios and len(scenarios) > 0:
-            scenario_id = scenarios[0]['id']
-            success, response = self.run_test("Activate Scenario", "POST", 
-                                            f"scenarios/{scenario_id}/activate")
+    def test_specific_scenarios(self):
+        """Test specific PROJEK HALIMUN scenarios"""
+        scenarios_to_test = [
+            ("scenario_1", "SELAT MELAKA GUARDIAN"),
+            ("scenario_2", "RAJAWALI SHIELD"), 
+            ("scenario_3", "NUSANTARA SPECTRUM")
+        ]
+        
+        all_success = True
+        
+        for scenario_id, expected_name in scenarios_to_test:
+            success, response = self.run_test(f"Get Scenario - {expected_name}", "GET", f"scenarios/{scenario_id}")
             if success and isinstance(response, dict):
-                required_fields = ["scenario_id", "status", "emitters_loaded", "timestamp"]
-                missing_fields = [f for f in required_fields if f not in response]
-                if missing_fields:
-                    self.log_test("Scenario Activation - Structure", False, 
-                                f"Missing fields: {missing_fields}")
+                actual_name = response.get('name', '')
+                if expected_name in actual_name:
+                    self.log_test(f"Scenario {scenario_id} - Name Match", True, f"Found: {actual_name}")
                 else:
-                    loaded = response.get('emitters_loaded', 0)
-                    status = response.get('status', '')
-                    self.log_test("Scenario Activation - Structure", True, 
-                                f"Status: {status}, Emitters loaded: {loaded}")
-        else:
-            self.log_test("Scenario Activation", False, "No scenarios available to activate")
+                    self.log_test(f"Scenario {scenario_id} - Name Match", False, f"Expected: {expected_name}, Got: {actual_name}")
+                    all_success = False
+                
+                # Check for emitters
+                emitter_data = response.get('emitter_data', [])
+                if emitter_data and len(emitter_data) > 0:
+                    self.log_test(f"Scenario {scenario_id} - Emitters", True, f"Found {len(emitter_data)} emitters")
+                else:
+                    self.log_test(f"Scenario {scenario_id} - Emitters", False, "No emitters found")
+                    all_success = False
+            else:
+                all_success = False
+        
+        return all_success
+
+    def test_scenario_activation(self):
+        """Test scenario activation for scenario_1"""
+        success, response = self.run_test("Activate Scenario 1", "POST", "scenarios/scenario_1/activate")
+        
+        if success and isinstance(response, dict):
+            required_fields = ["scenario_id", "status", "emitters_loaded", "timestamp"]
+            missing_fields = [f for f in required_fields if f not in response]
+            if missing_fields:
+                self.log_test("Scenario Activation - Structure", False, f"Missing fields: {missing_fields}")
+            else:
+                loaded = response.get('emitters_loaded', 0)
+                status = response.get('status', '')
+                scenario_id = response.get('scenario_id', '')
+                
+                if status == "activated" and loaded > 0:
+                    self.log_test("Scenario Activation - Success", True, 
+                                f"Scenario {scenario_id}: {status}, Emitters loaded: {loaded}")
+                else:
+                    self.log_test("Scenario Activation - Success", False, 
+                                f"Status: {status}, Emitters: {loaded}")
+        elif success:
+            self.log_test("Scenario Activation - Data Format", False, "Response is not a dict")
         
         return success
 
