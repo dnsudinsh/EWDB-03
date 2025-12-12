@@ -287,11 +287,7 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Scenario Selector dropdown"
-    - "AI Console chat functionality"
-    - "Emitter AI Analysis panel (Analisis)"
-    - "Load all 3 scenarios and verify"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
