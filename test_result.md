@@ -252,15 +252,18 @@ frontend:
 
   - task: "Emitter AI Analysis panel (Analisis)"
     implemented: true
-    working: NA
+    working: true
     file: "/app/frontend/src/pages/ResponsiveDashboard.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: NA
         agent: "main"
         comment: "User request to verify Analisis functionality - need UI test"
+      - working: true
+        agent: "testing"
+        comment: "TESTED: Emitter markers on map are clickable and show detailed popups with emitter information (name, type, origin, platform, frequency, threat level, position). 'Analyze' button in popup successfully opens 'Analisis Pemancar' panel in right sidebar. Panel displays emitter details and AI analysis section. Backend integration working with /api/ai/analyze endpoint returning tactical analysis. Full emitter analysis workflow functional."
 
   - task: "Responsive design"
     implemented: true
