@@ -363,7 +363,7 @@ const EmitterAnalysis = ({ emitter, onClose }) => {
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         <div className="hud-panel p-4">
-          <h3 className="font-mono text-sky-400 text-sm mb-2">{emitter.name}</h3>
+          <h3 className="font-mono text-teal-400 text-sm mb-2">{emitter.name}</h3>
           <div className="grid grid-cols-2 gap-2 text-xs">
             <div>
               <span className="text-slate-500">Type:</span>
