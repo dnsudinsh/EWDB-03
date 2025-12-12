@@ -325,15 +325,18 @@ const EmitterAnalysis = ({ emitter, onClose }) => {
   const [loading, setLoading] = useState(false);
 
   const fetchAnalysis = async () => {
-    if (!emitter?.id) return;
+    if (!emitter?.name) return;
     setLoading(true);
     try {
+      // Use emitter name URL encoded for lookup
+      const lookupId = encodeURIComponent(emitter.name);
       const response = await axios.get(
-        `${process.env.REACT_APP_BACKEND_URL}/api/ai/analyze/${emitter.id}`
+        `${process.env.REACT_APP_BACKEND_URL}/api/ai/analyze/${lookupId}`
       );
       setAnalysis(response.data);
     } catch (error) {
-      toast.error("Failed to fetch AI analysis");
+      console.error("AI Analysis error:", error);
+      toast.error("Gagal mendapatkan analisis AI");
     }
     setLoading(false);
   };
@@ -347,7 +350,7 @@ const EmitterAnalysis = ({ emitter, onClose }) => {
       <div className="p-4 border-b border-slate-800">
         <div className="flex items-center justify-between">
           <h2 className="text-sm font-bold uppercase tracking-wider text-slate-300">
-            Emitter Analysis
+            Analisis Pemancar
           </h2>
           <button 
             onClick={onClose}
