@@ -223,9 +223,9 @@ const MessageBubble = ({ message }) => {
   if (isSystem) {
     return (
       <div className="flex items-start gap-2 text-xs" data-testid="system-message">
-        <Sparkles className="w-3.5 h-3.5 text-sky-400 mt-0.5" />
+        <Sparkles className="w-3.5 h-3.5 text-teal-400 mt-0.5" />
         <div className="flex-1">
-          <span className="text-sky-400">[SYSTEM]</span>
+          <span className="text-teal-400">[SISTEM]</span>
           <span className="text-slate-400 ml-2">{message.content}</span>
         </div>
         <span className="text-slate-600 font-mono text-[10px]">{formatTime(message.timestamp)}</span>
