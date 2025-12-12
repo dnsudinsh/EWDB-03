@@ -10,7 +10,7 @@ import sys
 from datetime import datetime
 
 class MalaysianContextTester:
-    def __init__(self, base_url="https://radar-guardian-2.preview.emergentagent.com/api"):
+    def __init__(self, base_url="https://ew-dashboard.preview.emergentagent.com/api"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
