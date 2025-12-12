@@ -326,8 +326,12 @@ class AegisMindTester:
         self.test_countermeasures_endpoint()
         self.test_metrics_endpoint()
         
+        # Specific scenario tests
+        self.test_specific_scenarios()
+        
         # AI and advanced features
         self.test_ai_chat_endpoint()
+        self.test_ai_analysis_endpoint()
         self.test_scenario_activation()
 
         # Print summary
