@@ -1376,7 +1376,7 @@ async def root_health_check():
     """Health check endpoint for Kubernetes liveness/readiness probes"""
     return {
         "status": "healthy",
-        "system": "AEGIS MIND",
+        "system": "PROJEK HALIMUN",
         "version": "1.0.0",
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
@@ -1399,7 +1399,7 @@ logger = logging.getLogger(__name__)
 @app.on_event("startup")
 async def startup_event():
     """Initialize database with sample data if empty"""
-    logger.info("AEGIS MIND System Starting...")
+    logger.info("PROJEK HALIMUN - Memulakan Sistem...")
     
     # Initialize countermeasures if empty
     count = await db.countermeasures.count_documents({})
@@ -1407,11 +1407,11 @@ async def startup_event():
         for cm in SAMPLE_COUNTERMEASURES:
             cm_obj = dict(cm, id=str(uuid.uuid4()))
             await db.countermeasures.insert_one(cm_obj)
-        logger.info("Countermeasures database initialized")
+        logger.info("Pangkalan data countermeasures diinisialisasi")
     
-    logger.info("AEGIS MIND System Online")
+    logger.info("PROJEK HALIMUN - Sistem Aktif")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
-    logger.info("AEGIS MIND System Shutdown")
+    logger.info("PROJEK HALIMUN - Sistem Ditutup")
