@@ -107,20 +107,20 @@ const AIConsole = ({ selectedEmitter }) => {
       {/* Header */}
       <div className="p-4 border-b border-slate-800">
         <div className="flex items-center gap-2 mb-2">
-          <div className="p-1.5 bg-sky-500/20 rounded-sm">
-            <Bot className="w-4 h-4 text-sky-400" />
+          <div className="p-1.5 bg-teal-500/20 rounded-sm">
+            <Bot className="w-4 h-4 text-teal-400" />
           </div>
           <h2 className="text-sm font-bold uppercase tracking-wider text-slate-300">
-            AI Console
+            AI Console - HALIMUN
           </h2>
           <div className="flex-1"></div>
-          <div className="flex items-center gap-1.5 text-xs text-green-400">
-            <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
-            ONLINE
+          <div className="flex items-center gap-1.5 text-xs text-emerald-400">
+            <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></div>
+            AKTIF
           </div>
         </div>
         <p className="text-xs text-slate-500">
-          Gemini 2.5 Flash - Natural language tactical analysis
+          Gemini 2.5 Flash - Analisis taktikal bahasa semulajadi
         </p>
       </div>
 
