@@ -1,0 +1,74 @@
+{
+  "timestamp": "2025-12-12T05:10:52.609200",
+  "total_tests": 11,
+  "passed_tests": 7,
+  "success_rate": 63.63636363636363,
+  "test_results": [
+    {
+      "test_name": "Malaysian Scenarios - Count",
+      "success": true,
+      "details": "Found 3 scenarios",
+      "timestamp": "2025-12-12T05:10:40.639285"
+    },
+    {
+      "test_name": "Malaysian Scenarios - English Names",
+      "success": true,
+      "details": "All Malaysian scenarios present",
+      "timestamp": "2025-12-12T05:10:40.639310"
+    },
+    {
+      "test_name": "Malaysian Scenarios - Bahasa Names",
+      "success": true,
+      "details": "All Bahasa Malaysia names present",
+      "timestamp": "2025-12-12T05:10:40.639316"
+    },
+    {
+      "test_name": "Malaysian Scenarios - Regions",
+      "success": true,
+      "details": "Regions: ['Selat Melaka (Malacca Strait)', 'ESSZONE - Sabah Timur', 'Laut China Selatan (SCS) - Malaysian EEZ']",
+      "timestamp": "2025-12-12T05:10:40.639329"
+    },
+    {
+      "test_name": "Malaysian Emitters - MAF Assets",
+      "success": false,
+      "details": "Only found 2 Malaysian assets: ['KD Lekiu - TLDM Frigate', 'Lumut EW Station']",
+      "timestamp": "2025-12-12T05:10:40.675311"
+    },
+    {
+      "test_name": "Malaysian Emitters - Regional Threats",
+      "success": false,
+      "details": "Only found 0 regional threats: []",
+      "timestamp": "2025-12-12T05:10:40.675335"
+    },
+    {
+      "test_name": "Malaysian Emitters - Origin Malaysia",
+      "success": false,
+      "details": "Only found 2 Malaysian-origin emitters",
+      "timestamp": "2025-12-12T05:10:40.675342"
+    },
+    {
+      "test_name": "Malaysian Countermeasures - MAF Specific",
+      "success": false,
+      "details": "Only found 0 Malaysian countermeasures: []",
+      "timestamp": "2025-12-12T05:10:40.711502"
+    },
+    {
+      "test_name": "AI Malaysian Context - MAF References",
+      "success": true,
+      "details": "Found MAF terms: ['tldm', 'tudm', 'tdm', 'malaysia', 'malaysian', 'maf', 'esscom', 'petronas']",
+      "timestamp": "2025-12-12T05:10:52.556506"
+    },
+    {
+      "test_name": "AI Malaysian Context - Response Quality",
+      "success": true,
+      "details": "Substantial response: 3549 characters",
+      "timestamp": "2025-12-12T05:10:52.556530"
+    },
+    {
+      "test_name": "Map Coordinates - Malaysian Centered",
+      "success": true,
+      "details": "All 3 scenarios centered on Malaysia",
+      "timestamp": "2025-12-12T05:10:52.608530"
+    }
+  ]
+}
