@@ -1,7 +1,8 @@
-# AEGIS MIND - Electronic Warfare Decision Support System
+# AEGIS MIND - Sistem Sokongan Keputusan Peperangan Elektronik ATM
+# Malaysian Armed Forces Electronic Warfare Decision Support System
 
 ## Original Problem Statement
-Create a functional, interactive prototype of a next-generation AI/ML-enhanced Electronic Warfare Database (EWDB) and Decision Support System for demonstration to military leadership.
+Create a functional, interactive prototype of a next-generation AI/ML-enhanced Electronic Warfare Database (EWDB) and Decision Support System for Malaysian Armed Forces (ATM) leadership.
 
 ### User Choices
 - **AI/ML Integration**: Gemini 2.5 Flash via Emergent LLM Key
@@ -9,82 +10,54 @@ Create a functional, interactive prototype of a next-generation AI/ML-enhanced E
 - **Map Visualization**: Leaflet with OpenStreetMap (free, no key needed)
 - **Priority**: Core dashboard with battlefield map + threat visualization
 - **Demo Mode**: Simulated real-time data
+- **Context**: Malaysian Armed Forces (MAF) specific scenarios
 
-## Architecture Implemented
+## MAF-Specific Demo Scenarios
 
-### Backend (FastAPI + MongoDB)
-- **server.py**: Main FastAPI application with all endpoints
-- **Endpoints**:
-  - `GET /api/health` - System health check
-  - `GET /api/emitters` - List all tracked emitters
-  - `POST /api/emitters` - Add new emitter
-  - `GET /api/scenarios` - List demo scenarios
-  - `POST /api/scenarios/{id}/activate` - Activate scenario
-  - `GET /api/threats/assess` - Get threat assessments
-  - `GET /api/threats/timeline` - Get threat timeline
-  - `GET /api/countermeasures` - List countermeasures
-  - `GET /api/countermeasures/recommend/{type}` - Get recommendations
-  - `POST /api/ai/chat` - AI chat interface
-  - `GET /api/ai/analyze/{id}` - AI emitter analysis
-  - `GET /api/metrics` - System metrics
+### Scenario 1: Selat Melaka Guardian (Penjaga Selat Melaka)
+- **Region**: Malacca Strait - Port Klang to Pulau Pinang
+- **Operations**: OP PASIR, MMEA Joint Ops
+- **Threats**: Chinese research vessels, pirate motherships, GPS-spoofed fishing fleets
+- **EW Focus**: Electronic Support, COMINT/DF, AIS Correlation, Pattern of Life Analysis
 
-### Frontend (React + Tailwind CSS)
-- **Dashboard.jsx**: Main dashboard layout with navigation
-- **BattleMap.jsx**: Interactive tactical map with Leaflet
-- **ThreatPanel.jsx**: Threat assessment display
-- **AIConsole.jsx**: Natural language AI interface
-- **CountermeasurePanel.jsx**: ECM options display
-- **MetricsPanel.jsx**: System performance metrics
-- **ScenarioSelector.jsx**: Demo scenario selector
-- **ThreatTimeline.jsx**: Chronological event log
+### Scenario 2: Rajawali Shield (Perisai Rajawali)
+- **Region**: ESSZONE - Sabah Timur (Semporna to Tawau)
+- **Operations**: OP SABAH TIMUR, ESSCOM Border Ops
+- **Threats**: Abu Sayyaf KFR groups, smuggling networks, reconnaissance drones
+- **EW Focus**: Low-Cost Portable EW, KFR Pattern Recognition, Counter-UAV
 
-### Key Features
-1. **Interactive Battlefield Map**
-   - Dark tactical theme (CartoDB Dark Matter tiles)
-   - Color-coded markers (red=hostile, blue=friendly, amber=unknown)
-   - Emitter popups with detailed information
-   - Legend and coordinate display
+### Scenario 3: Nusantara Spectrum (Spektrum Nusantara)
+- **Region**: South China Sea - Malaysian EEZ (Luconia Shoals, Kasawari gas field)
+- **Operations**: TLDM Sovereignty Patrol, TUDM Air Defense, PETRONAS Protection
+- **Threats**: CCG coast guard, Maritime Militia, H-6K electronic reconnaissance
+- **EW Focus**: Electronic Protection, Joint Spectrum Management, Diplomatic Evidence Collection
 
-2. **Threat Assessment Panel**
-   - Real-time threat scoring (0-100%)
-   - Kill chain phase tracking
-   - Time to impact warnings
-   - Recommended actions
+## Malaysian Emitters Database
 
-3. **AI Console (Gemini 2.5 Flash)**
-   - Natural language tactical queries
-   - Context-aware responses
-   - Sample query shortcuts
-   - Professional military-style output
+### Friendly (Malaysia)
+- KD Lekiu - TLDM Frigate (NS 100 radar)
+- KD Keris - LCS Patrol (Thales NS 100)
+- F/A-18D Hornet - TUDM (SUPER NASA radar)
+- ESSCOM Command Post
+- Lumut EW Station
+- Aerodyne Counter-UAV
+- Kasawari Gas Platform (PETRONAS)
 
-4. **Demo Scenarios**
-   - Carrier Strike Group Defense (Taiwan Strait)
-   - Urban EW Drone Defense (Kyiv)
-   - Spectrum Management (Baltic Sea)
+### Hostile/Unknown
+- Xiang Yang Hong 03 - Chinese Research Vessel
+- CCG 5901 - World's largest coast guard ship
+- H-6K Elint Aircraft
+- Maritime Militia Flotilla
+- Abu Sayyaf Communications (Baofeng)
+- Panther Boat - Smuggling vessels
+- MV Sinar Kudus - Pirate Mothership
 
-5. **Countermeasure System**
-   - ECM deployment options
-   - Success rate indicators
-   - Resource cost tracking
-   - Quick deploy buttons
-
-## Sample Data Included
-- 8 emitters (Chinese/Russian/US systems)
-- 5 countermeasures (jamming, decoys, chaff, cyber)
-- 3 demonstration scenarios
-- Simulated threat assessments
-
-## Technologies Used
-- **Backend**: FastAPI, Motor (MongoDB async), emergentintegrations
-- **Frontend**: React, Tailwind CSS, react-leaflet, recharts, framer-motion
-- **AI**: Gemini 2.5 Flash via Emergent LLM Key
-- **Database**: MongoDB
-- **Maps**: Leaflet + CartoDB Dark Matter tiles
-
-## Next Tasks / Enhancement Ideas
-1. Add real-time WebSocket updates for live emitter tracking
-2. Implement signal analysis workbench with waterfall display
-3. Add Monte Carlo simulation for what-if analysis
-4. Create automatic briefing slide generation
-5. Add user authentication with role-based access
-6. Implement historical playback mode for after-action review
+## Malaysian Countermeasures
+1. Dagaie NG Decoy System - Naval decoy for TLDM LCS
+2. Portable EW Jammer - Man-portable for MAF infantry
+3. COMINT/DF Triangulation Array - Multi-site direction finding
+4. GPS Spoofing Defense - PETRONAS platform protection
+5. Frequency Agility Mode (NS 100) - Anti-jamming for radars
+6. AI Spectrum Manager - Joint TLDM/TUDM/MMEA coordination
+7. Diplomatic Evidence Generator - For MOFA protests
+8. Cyber-EW Malware Injection - KFR network tracking
