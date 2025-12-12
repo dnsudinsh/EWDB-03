@@ -209,7 +209,11 @@ const BattleMap = ({ emitters = [], onEmitterSelect, selectedEmitter }) => {
           </React.Fragment>
         ))}
 
-        <MapUpdater emitters={emitters} />
+        <MapUpdater 
+          emitters={emitters} 
+          initialBoundsSet={initialBoundsSet}
+          onInitialBoundsSet={handleInitialBoundsSet}
+        />
       </MapContainer>
 
       {/* Map Legend */}
