@@ -1,0 +1,541 @@
+{
+  "timestamp": "2025-12-12T04:27:27.786976",
+  "total_tests": 20,
+  "passed_tests": 20,
+  "success_rate": 100.0,
+  "test_results": [
+    {
+      "test_name": "Health Check",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.074893",
+      "response_data": {
+        "status": "healthy",
+        "system": "AEGIS MIND",
+        "version": "1.0.0",
+        "timestamp": "2025-12-12T04:27:23.071788+00:00"
+      }
+    },
+    {
+      "test_name": "Health Check - Response Format",
+      "success": true,
+      "details": "System: AEGIS MIND, Status: healthy",
+      "timestamp": "2025-12-12T04:27:23.075358",
+      "response_data": null
+    },
+    {
+      "test_name": "Get Emitters",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.115819",
+      "response_data": [
+        {
+          "name": "Type 346B - PLAN Destroyer",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "China",
+          "threat_level": "critical",
+          "frequency_min": 3100,
+          "frequency_max": 3500,
+          "prf": 3000,
+          "pulse_width": 1.5,
+          "modulation_type": "pulse",
+          "latitude": 25.2,
+          "longitude": 120.5,
+          "affiliation": "hostile",
+          "id": "2e420467-f593-4f42-97fb-045bdfd24542"
+        },
+        {
+          "name": "YLC-8B Early Warning",
+          "emitter_type": "radar",
+          "platform": "ground",
+          "origin": "China",
+          "threat_level": "high",
+          "frequency_min": 1200,
+          "frequency_max": 1400,
+          "prf": 500,
+          "pulse_width": 50,
+          "modulation_type": "pulse",
+          "latitude": 25.8,
+          "longitude": 119.2,
+          "affiliation": "hostile",
+          "id": "5d7dac6a-2998-400b-ad42-e1638bce42a0"
+        },
+        {
+          "name": "DF-21D Missile Seeker",
+          "emitter_type": "radar",
+          "platform": "missile",
+          "origin": "China",
+          "threat_level": "critical",
+          "frequency_min": 9000,
+          "frequency_max": 10000,
+          "prf": 10000,
+          "pulse_width": 0.5,
+          "modulation_type": "chirp",
+          "latitude": 25.5,
+          "longitude": 120.8,
+          "affiliation": "hostile",
+          "id": "e5e962ba-b819-4bca-9bca-8e00b929e40b"
+        },
+        {
+          "name": "USS Gerald Ford - SPY-6",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "USA",
+          "threat_level": "low",
+          "frequency_min": 2900,
+          "frequency_max": 3100,
+          "prf": 4000,
+          "pulse_width": 1.0,
+          "modulation_type": "pulse",
+          "latitude": 24.8,
+          "longitude": 121.2,
+          "affiliation": "friendly",
+          "id": "ef7fac02-88c3-43b1-a080-ec55ad573ff3"
+        },
+        {
+          "name": "E-2D Hawkeye AEW",
+          "emitter_type": "radar",
+          "platform": "aircraft",
+          "origin": "USA",
+          "threat_level": "low",
+          "frequency_min": 400,
+          "frequency_max": 450,
+          "prf": 300,
+          "pulse_width": 10,
+          "modulation_type": "pulse",
+          "latitude": 24.5,
+          "longitude": 122.0,
+          "affiliation": "friendly",
+          "id": "64017d47-e789-41c7-b5d9-08927faa08b6"
+        },
+        {
+          "name": "DJI Mavic Control Link",
+          "emitter_type": "communication",
+          "platform": "uav",
+          "origin": "Unknown",
+          "threat_level": "medium",
+          "frequency_min": 2400,
+          "frequency_max": 2483,
+          "modulation_type": "FHSS",
+          "latitude": 50.45,
+          "longitude": 30.52,
+          "affiliation": "hostile",
+          "id": "aad2594a-bedf-4417-9c1f-ef7897acda3a"
+        },
+        {
+          "name": "Orlan-10 Datalink",
+          "emitter_type": "communication",
+          "platform": "uav",
+          "origin": "Russia",
+          "threat_level": "high",
+          "frequency_min": 868,
+          "frequency_max": 915,
+          "modulation_type": "FM",
+          "latitude": 50.48,
+          "longitude": 30.55,
+          "affiliation": "hostile",
+          "id": "0bb90dad-e5f3-4a2f-bdcd-4316ab76e2b2"
+        },
+        {
+          "name": "S-400 Engagement Radar",
+          "emitter_type": "radar",
+          "platform": "ground",
+          "origin": "Russia",
+          "threat_level": "critical",
+          "frequency_min": 2000,
+          "frequency_max": 4000,
+          "prf": 8000,
+          "pulse_width": 0.2,
+          "modulation_type": "pulse",
+          "latitude": 50.6,
+          "longitude": 30.3,
+          "affiliation": "hostile",
+          "id": "f743fc27-e05d-49c5-bf03-44a3476c9ccf"
+        }
+      ]
+    },
+    {
+      "test_name": "Emitters - Data Format",
+      "success": true,
+      "details": "Found 8 emitters",
+      "timestamp": "2025-12-12T04:27:23.116343",
+      "response_data": null
+    },
+    {
+      "test_name": "Emitters - Structure",
+      "success": true,
+      "details": "Sample: Type 346B - PLAN Destroyer (hostile)",
+      "timestamp": "2025-12-12T04:27:23.116364",
+      "response_data": null
+    },
+    {
+      "test_name": "Get Scenarios",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.155984",
+      "response_data": [
+        {
+          "id": "scenario_1",
+          "name": "Carrier Strike Group Defense",
+          "description": "USS Gerald Ford transiting Taiwan Strait under threat from PLAN naval forces and coastal defense systems",
+          "region": "Taiwan Strait",
+          "center_lat": 25.0,
+          "center_lng": 121.0,
+          "zoom": 7,
+          "emitters": [
+            "Type 346B - PLAN Destroyer",
+            "YLC-8B Early Warning",
+            "DF-21D Missile Seeker",
+            "USS Gerald Ford - SPY-6",
+            "E-2D Hawkeye AEW"
+          ],
+          "threat_summary": "Multiple surface and air defense radars tracking friendly forces. Anti-ship ballistic missile threat detected."
+        },
+        {
+          "id": "scenario_2",
+          "name": "Urban EW - Drone Defense",
+          "description": "Urban defense against commercial drone swarm modified for ISR and attack operations",
+          "region": "Kyiv, Ukraine",
+          "center_lat": 50.45,
+          "center_lng": 30.52,
+          "zoom": 10,
+          "emitters": [
+            "DJI Mavic Control Link",
+            "Orlan-10 Datalink",
+            "S-400 Engagement Radar"
+          ],
+          "threat_summary": "50+ drones detected. Mix of commercial and military UAVs. Long-range SAM threat from north."
+        },
+        {
+          "id": "scenario_3",
+          "name": "Spectrum Management - Contested",
+          "description": "Multi-domain operations with congested spectrum requiring dynamic frequency management",
+          "region": "Baltic Sea",
+          "center_lat": 57.0,
+          "center_lng": 20.0,
+          "zoom": 6,
+          "emitters": [],
+          "threat_summary": "Heavy electromagnetic congestion. Multiple friendly and hostile emitters competing for spectrum access."
+        }
+      ]
+    },
+    {
+      "test_name": "Scenarios - Data Format",
+      "success": true,
+      "details": "Found 3 scenarios",
+      "timestamp": "2025-12-12T04:27:23.156472",
+      "response_data": null
+    },
+    {
+      "test_name": "Scenarios - Structure",
+      "success": true,
+      "details": "Sample: Carrier Strike Group Defense in Taiwan Strait",
+      "timestamp": "2025-12-12T04:27:23.156492",
+      "response_data": null
+    },
+    {
+      "test_name": "Threat Assessment",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.193144",
+      "response_data": {
+        "total_threats": 6,
+        "critical_count": 5,
+        "assessments": [
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "Type 346B - PLAN Destroyer",
+            "threat_score": 1.0,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 80.84597265141349,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.189995+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "DF-21D Missile Seeker",
+            "threat_score": 1.0,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 45.775849401340864,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.190009+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "S-400 Engagement Radar",
+            "threat_score": 1.0,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 83.82935697720124,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.190018+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "YLC-8B Early Warning",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 172.11751441800118,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.190006+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "Orlan-10 Datalink",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 149.4249636213731,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.190015+00:00"
+          },
+          {
+            "emitter_id": "unknown",
+            "emitter_name": "DJI Mavic Control Link",
+            "threat_score": 0.6,
+            "kill_chain_phase": "detection",
+            "time_to_impact": null,
+            "recommended_actions": [
+              "Continue monitoring",
+              "Prepare countermeasures"
+            ],
+            "assessed_at": "2025-12-12T04:27:23.190012+00:00"
+          }
+        ],
+        "timestamp": "2025-12-12T04:27:23.190024+00:00"
+      }
+    },
+    {
+      "test_name": "Threats - Structure",
+      "success": true,
+      "details": "Total: 6, Critical: 5",
+      "timestamp": "2025-12-12T04:27:23.193641",
+      "response_data": null
+    },
+    {
+      "test_name": "Get Countermeasures",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.229676",
+      "response_data": [
+        {
+          "name": "AN/SLQ-32 Mode 4",
+          "technique_type": "jamming",
+          "description": "Active electronic countermeasure providing noise jamming against fire control radars",
+          "success_rate": 0.78,
+          "resource_cost": "medium",
+          "applicable_threats": [
+            "radar",
+            "missile_seeker"
+          ],
+          "side_effects": "May reveal own position",
+          "id": "d3699b9d-e528-4c01-86e1-0ca7884cc43e"
+        },
+        {
+          "name": "Nulka Decoy",
+          "technique_type": "deception",
+          "description": "Hovering rocket-propelled decoy that provides radar false target",
+          "success_rate": 0.85,
+          "resource_cost": "high",
+          "applicable_threats": [
+            "anti_ship_missile",
+            "radar"
+          ],
+          "side_effects": "Limited inventory, single use",
+          "id": "ccc21085-88f7-49c7-aa28-0c1152906e7c"
+        },
+        {
+          "name": "Mk 36 SRBOC Chaff",
+          "technique_type": "chaff",
+          "description": "Rapid-blooming chaff providing radar obscuration",
+          "success_rate": 0.65,
+          "resource_cost": "low",
+          "applicable_threats": [
+            "radar",
+            "missile_seeker"
+          ],
+          "side_effects": "Wind dependent effectiveness",
+          "id": "bbf73970-150e-46f0-a2d8-6a66d1a4b6cc"
+        },
+        {
+          "name": "GPS Spoofing Array",
+          "technique_type": "cyber",
+          "description": "Broadcasts false GPS signals to misdirect GPS-guided threats",
+          "success_rate": 0.72,
+          "resource_cost": "medium",
+          "applicable_threats": [
+            "uav",
+            "cruise_missile"
+          ],
+          "side_effects": "Affects friendly GPS receivers in area",
+          "id": "d8c1aad5-d97f-4d45-a3b5-55bccb231fe4"
+        },
+        {
+          "name": "Adaptive Frequency Jammer",
+          "technique_type": "jamming",
+          "description": "AI-driven jammer that adapts to target frequency hopping patterns",
+          "success_rate": 0.82,
+          "resource_cost": "high",
+          "applicable_threats": [
+            "communication",
+            "uav_datalink"
+          ],
+          "side_effects": "Significant power consumption",
+          "id": "0f6e741c-3674-47aa-8618-8ff7bab8a132"
+        }
+      ]
+    },
+    {
+      "test_name": "Countermeasures - Data Format",
+      "success": true,
+      "details": "Found 5 countermeasures",
+      "timestamp": "2025-12-12T04:27:23.230090",
+      "response_data": null
+    },
+    {
+      "test_name": "Countermeasures - Structure",
+      "success": true,
+      "details": "Sample: AN/SLQ-32 Mode 4 (jamming)",
+      "timestamp": "2025-12-12T04:27:23.230111",
+      "response_data": null
+    },
+    {
+      "test_name": "System Metrics",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:23.267483",
+      "response_data": {
+        "emitters_tracked": 8,
+        "hostile_count": 6,
+        "friendly_count": 2,
+        "classification_accuracy": 0.947,
+        "processing_latency_ms": 29,
+        "threat_assessment_ms": 95,
+        "ai_response_ms": 342,
+        "uptime_hours": 165,
+        "signals_processed_24h": 89579,
+        "timestamp": "2025-12-12T04:27:23.264263+00:00"
+      }
+    },
+    {
+      "test_name": "Metrics - Structure",
+      "success": true,
+      "details": "Tracked: 8, Hostile: 6, Accuracy: 94.7%",
+      "timestamp": "2025-12-12T04:27:23.267940",
+      "response_data": null
+    },
+    {
+      "test_name": "AI Chat",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:27.655529",
+      "response_data": {
+        "response": "**THREAT STATUS: ELEVATED**\n\n*   **Hostile Emitters:** 3 (all identified as radar systems).\n*   **Total Active Emitters:** 5.\n*   **Threat Type:** Radar.\n*   **Confidence:** HIGH (based on direct emitter count and classification).\n\n**Recommendation:** Maintain active monitoring. Initiate passive collection and SIGINT analysis on hostile radar emissions to determine specific radar function (e.g., search, track, fire control) and intent. Prioritize spectrum analysis for frequency hopping or LPI indicators.",
+        "context": {
+          "active_emitters": 5,
+          "hostile_count": 3,
+          "threat_types": [
+            "radar"
+          ],
+          "current_scenario": "Active monitoring"
+        }
+      }
+    },
+    {
+      "test_name": "AI Chat - Structure",
+      "success": true,
+      "details": "Response length: 509 chars, Context keys: ['active_emitters', 'hostile_count', 'threat_types', 'current_scenario']",
+      "timestamp": "2025-12-12T04:27:27.656212",
+      "response_data": null
+    },
+    {
+      "test_name": "Get Scenarios for Activation",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:27.732499",
+      "response_data": [
+        {
+          "id": "scenario_1",
+          "name": "Carrier Strike Group Defense",
+          "description": "USS Gerald Ford transiting Taiwan Strait under threat from PLAN naval forces and coastal defense systems",
+          "region": "Taiwan Strait",
+          "center_lat": 25.0,
+          "center_lng": 121.0,
+          "zoom": 7,
+          "emitters": [
+            "Type 346B - PLAN Destroyer",
+            "YLC-8B Early Warning",
+            "DF-21D Missile Seeker",
+            "USS Gerald Ford - SPY-6",
+            "E-2D Hawkeye AEW"
+          ],
+          "threat_summary": "Multiple surface and air defense radars tracking friendly forces. Anti-ship ballistic missile threat detected."
+        },
+        {
+          "id": "scenario_2",
+          "name": "Urban EW - Drone Defense",
+          "description": "Urban defense against commercial drone swarm modified for ISR and attack operations",
+          "region": "Kyiv, Ukraine",
+          "center_lat": 50.45,
+          "center_lng": 30.52,
+          "zoom": 10,
+          "emitters": [
+            "DJI Mavic Control Link",
+            "Orlan-10 Datalink",
+            "S-400 Engagement Radar"
+          ],
+          "threat_summary": "50+ drones detected. Mix of commercial and military UAVs. Long-range SAM threat from north."
+        },
+        {
+          "id": "scenario_3",
+          "name": "Spectrum Management - Contested",
+          "description": "Multi-domain operations with congested spectrum requiring dynamic frequency management",
+          "region": "Baltic Sea",
+          "center_lat": 57.0,
+          "center_lng": 20.0,
+          "zoom": 6,
+          "emitters": [],
+          "threat_summary": "Heavy electromagnetic congestion. Multiple friendly and hostile emitters competing for spectrum access."
+        }
+      ]
+    },
+    {
+      "test_name": "Activate Scenario",
+      "success": true,
+      "details": "Status: 200",
+      "timestamp": "2025-12-12T04:27:27.786260",
+      "response_data": {
+        "scenario_id": "scenario_1",
+        "status": "activated",
+        "emitters_loaded": 5,
+        "timestamp": "2025-12-12T04:27:27.783130+00:00"
+      }
+    },
+    {
+      "test_name": "Scenario Activation - Structure",
+      "success": true,
+      "details": "Status: activated, Emitters loaded: 5",
+      "timestamp": "2025-12-12T04:27:27.786807",
+      "response_data": null
+    }
+  ]
+}
