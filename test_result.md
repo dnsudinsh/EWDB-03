@@ -222,15 +222,18 @@ frontend:
 
   - task: "Scenario Selector dropdown"
     implemented: true
-    working: NA
+    working: true
     file: "/app/frontend/src/components/ScenarioSelector.jsx"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: NA
         agent: "main"
         comment: "Need to test if dropdown opens and scenarios can be selected/activated"
+      - working: true
+        agent: "testing"
+        comment: "TESTED: Scenario selector dropdown opens correctly showing all 3 scenarios: SELAT MELAKA GUARDIAN (scenario_1), RAJAWALI SHIELD (scenario_2), and NUSANTARA SPECTRUM (scenario_3). Clicking LOAD SCENARIO button opens dropdown with proper scenario details including region, emitter counts, and threat summaries. Scenario selection works and shows activation indicators."
 
   - task: "AI Console chat functionality"
     implemented: true
