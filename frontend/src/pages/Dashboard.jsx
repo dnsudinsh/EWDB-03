@@ -206,7 +206,7 @@ const Dashboard = () => {
               <MetricBadge 
                 label="TRACKING" 
                 value={metrics?.emitters_tracked || 0} 
-                color="sky"
+                color="teal"
                 testId="metric-tracking"
               />
               <MetricBadge 
