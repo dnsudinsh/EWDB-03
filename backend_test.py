@@ -200,13 +200,13 @@ class AegisMindTester:
         return success
 
     def test_ai_chat_endpoint(self):
-        """Test AI chat endpoint"""
+        """Test AI chat endpoint with Malaysian context"""
         test_message = {
-            "message": "What is the current threat status?",
-            "session_id": "test_session"
+            "message": "Situasi ancaman?",
+            "session_id": "test"
         }
         
-        success, response = self.run_test("AI Chat", "POST", "ai/chat", 200, test_message)
+        success, response = self.run_test("AI Chat - Malaysian Query", "POST", "ai/chat", 200, test_message)
         if success and isinstance(response, dict):
             required_fields = ["response", "context"]
             missing_fields = [f for f in required_fields if f not in response]
@@ -217,8 +217,41 @@ class AegisMindTester:
                 context = response.get('context', {})
                 self.log_test("AI Chat - Structure", True, 
                             f"Response length: {len(ai_response)} chars, Context keys: {list(context.keys())}")
+                
+                # Check if response contains relevant Malaysian military context
+                if any(term in ai_response.lower() for term in ['malaysia', 'maf', 'tldm', 'tudm', 'halimun']):
+                    self.log_test("AI Chat - Malaysian Context", True, "Response contains Malaysian military context")
+                else:
+                    self.log_test("AI Chat - Malaysian Context", False, "Response lacks Malaysian military context")
         elif success:
             self.log_test("AI Chat - Data Format", False, "Response is not a dict")
+        
+        return success
+
+    def test_ai_analysis_endpoint(self):
+        """Test AI analysis endpoint for specific emitters"""
+        # Test with URL encoded emitter name
+        emitter_name = "KD%20Lekiu%20-%20TLDM%20Frigate"
+        success, response = self.run_test("AI Analysis - KD Lekiu", "GET", f"ai/analyze/{emitter_name}")
+        
+        if success and isinstance(response, dict):
+            required_fields = ["emitter_id", "emitter_name", "analysis", "timestamp"]
+            missing_fields = [f for f in required_fields if f not in response]
+            if missing_fields:
+                self.log_test("AI Analysis - Structure", False, f"Missing fields: {missing_fields}")
+            else:
+                analysis = response.get('analysis', '')
+                emitter_name_resp = response.get('emitter_name', '')
+                self.log_test("AI Analysis - Structure", True, 
+                            f"Analyzed: {emitter_name_resp}, Analysis length: {len(analysis)} chars")
+                
+                # Check if analysis contains tactical assessment
+                if any(term in analysis.lower() for term in ['threat', 'countermeasure', 'tactical', 'assessment']):
+                    self.log_test("AI Analysis - Tactical Content", True, "Analysis contains tactical assessment")
+                else:
+                    self.log_test("AI Analysis - Tactical Content", False, "Analysis lacks tactical assessment")
+        elif success:
+            self.log_test("AI Analysis - Data Format", False, "Response is not a dict")
         
         return success
 
