@@ -107,13 +107,13 @@ const Dashboard = () => {
       <header className="h-14 bg-[#0f172a] border-b border-slate-800 flex items-center justify-between px-4">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Shield className="w-6 h-6 text-sky-500" />
+            <Shield className="w-6 h-6 text-teal-500" />
             <span className="font-bold text-lg tracking-tight uppercase" style={{ fontFamily: 'Chivo, sans-serif' }}>
-              AEGIS MIND
+              PROJEK HALIMUN
             </span>
           </div>
-          <span className="text-xs text-slate-500 border-l border-slate-700 pl-4">
-            Sistem Sokongan Keputusan EW - ATM
+          <span className="text-xs text-slate-400 border-l border-slate-700 pl-4 italic">
+            "Perisai senyap angkasa memayungi negara"
           </span>
         </div>
         
