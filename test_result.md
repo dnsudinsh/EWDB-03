@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: Verify all three PROJEK HALIMUN scenarios (SELAT MELAKA GUARDIAN, RAJAWALI SHIELD, NUSANTARA SPECTRUM) are properly implemented with all features including AI Analisis functionality working correctly
+user_problem_statement: Verify two bug fixes in PROJEK HALIMUN: Bug 1 - Error Toast Spam "Gagal menyambung ke sistem HALIMUN" should NOT appear repeatedly, Bug 2 - Map Zoom Reset Issue should persist after user zooms in
 
 backend:
   - task: "Scenario 1 - SELAT MELAKA GUARDIAN API"
