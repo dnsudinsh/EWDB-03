@@ -61,6 +61,10 @@ const Dashboard = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const [showDeviceInfo, setShowDeviceInfo] = useState(false);
 
+  // Track if we've shown the connection error to avoid spam
+  const [connectionErrorShown, setConnectionErrorShown] = useState(false);
+  const [lastSuccessfulFetch, setLastSuccessfulFetch] = useState(null);
+
   // Performance-based settings
   const perfSettings = getPerformanceSettings();
   const syncMode = getDataSyncMode();
@@ -93,14 +97,24 @@ const Dashboard = () => {
       setThreats(threatsRes.data);
       setMetrics(metricsRes.data);
       setIsLoading(false);
+      
+      // Reset error state on successful fetch
+      if (connectionErrorShown) {
+        setConnectionErrorShown(false);
+        toast.success("Sambungan ke sistem HALIMUN dipulihkan");
+      }
+      setLastSuccessfulFetch(Date.now());
     } catch (error) {
       console.error("Error fetching data:", error);
-      if (isOnline) {
+      // Only show error toast once, not on every refresh failure
+      // And only if we've been disconnected for more than 10 seconds
+      if (isOnline && !connectionErrorShown && (!lastSuccessfulFetch || Date.now() - lastSuccessfulFetch > 10000)) {
         toast.error("Gagal menyambung ke sistem HALIMUN");
+        setConnectionErrorShown(true);
       }
       setIsLoading(false);
     }
-  }, [perfSettings.maxDataPoints, isOnline]);
+  }, [perfSettings.maxDataPoints, isOnline, connectionErrorShown, lastSuccessfulFetch]);
 
   useEffect(() => {
     fetchData();
