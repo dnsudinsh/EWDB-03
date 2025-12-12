@@ -111,7 +111,7 @@ const AIConsole = ({ selectedEmitter }) => {
             <Bot className="w-4 h-4 text-teal-400" />
           </div>
           <h2 className="text-sm font-bold uppercase tracking-wider text-slate-300">
-            AI Console - HALIMUN
+            AI Console - EW HALIMUNAN
           </h2>
           <div className="flex-1"></div>
           <div className="flex items-center gap-1.5 text-xs text-emerald-400">

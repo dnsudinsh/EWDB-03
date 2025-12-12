@@ -101,7 +101,7 @@ const Dashboard = () => {
       // Reset error state on successful fetch
       if (connectionErrorShown) {
         setConnectionErrorShown(false);
-        toast.success("Sambungan ke sistem HALIMUN dipulihkan");
+        toast.success("Sambungan ke sistem EW HALIMUNAN ATM dipulihkan");
       }
       setLastSuccessfulFetch(Date.now());
     } catch (error) {
@@ -109,7 +109,7 @@ const Dashboard = () => {
       // Only show error toast once, not on every refresh failure
       // And only if we've been disconnected for more than 10 seconds
       if (isOnline && !connectionErrorShown && (!lastSuccessfulFetch || Date.now() - lastSuccessfulFetch > 10000)) {
-        toast.error("Gagal menyambung ke sistem HALIMUN");
+        toast.error("Gagal menyambung ke sistem EW HALIMUNAN ATM");
         setConnectionErrorShown(true);
       }
       setIsLoading(false);
