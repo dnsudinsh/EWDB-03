@@ -1004,71 +1004,10 @@ RESPONSE FORMAT:
 - Reference specific MAF assets: KD Lekiu, KD Rencong, F/A-18D, EC-725, etc.
 - Support Malaysia's strategic neutrality - proportional, non-kinetic responses
 - Format for quick comprehension in tactical environment"""
-        "name_bm": "Perisai Rajawali",
-        "description": "Sabah Eastern Security Command (ESSCOM) border surveillance against KFR groups, smuggling networks, and intrusion drones in ESSZONE from Semporna to Tawau",
-        "region": "ESSZONE - Sabah Timur",
-        "center_lat": 4.48,
-        "center_lng": 118.5,
-        "zoom": 10,
-        "emitters": ["Abu Sayyaf Comms - Baofeng Radio", "Panther Boat - Sat Phone Burst", "Recon Drone - DJI Controller", "ESSCOM Command Post", "Aerodyne Counter-UAV"],
-        "threat_summary": "Asymmetric threats: Abu Sayyaf/ISSP-linked militants using encrypted commercial radios, smuggling boats running dark, reconnaissance drones targeting ESSCOM bases. Direct support to OP SABAH TIMUR.",
-        "ew_focus": ["Low-Cost Portable EW", "KFR Pattern Recognition", "Cyber-EW Convergence", "Counter-UAV"],
-        "operations": ["OP SABAH TIMUR", "ESSCOM Border Ops"]
-    },
-    {
-        "id": "scenario_3",
-        "name": "Nusantara Spectrum",
-        "name_bm": "Spektrum Nusantara",
-        "description": "South China Sea sovereignty patrol and strategic deterrence near Beting Patinggi Ali (Luconia Shoals) and Kasawari gas field, protecting Malaysian EEZ",
-        "region": "Laut China Selatan (SCS) - Malaysian EEZ",
-        "center_lat": 5.8,
-        "center_lng": 112.1,
-        "zoom": 8,
-        "emitters": ["CCG 5901 - Coast Guard Cutter", "Maritime Militia Flotilla", "H-6K Elint Aircraft", "KD Keris - LCS Patrol", "F/A-18D Hornet - TUDM", "Kasawari Gas Platform"],
-        "threat_summary": "High-end state actor threat: CCG ships with advanced jammers, 'Little Blue Men' creating spectrum chaos, H-6K electronic reconnaissance probing air defense, need to protect PETRONAS Kasawari gas field.",
-        "ew_focus": ["Electronic Protection (EP)", "Joint Spectrum Management", "Counter-ISR", "Diplomatic Evidence Collection"],
-        "operations": ["TLDM Sovereignty Patrol", "TUDM Air Defense", "PETRONAS Protection"]
-    }
-]
-
-# ============ AI INTEGRATION ============
-
-async def get_ai_response(query: str, context: Dict[str, Any] = None) -> str:
-    """Get AI response using Gemini 2.5 Flash via emergentintegrations"""
-    try:
-        from emergentintegrations.llm.chat import LlmChat, UserMessage
-        
-        api_key = os.environ.get('EMERGENT_LLM_KEY')
-        if not api_key:
-            return "AI system offline - API key not configured"
-        
-        system_message = """You are AEGIS MIND, an advanced Electronic Warfare AI assistant for the Malaysian Armed Forces (Angkatan Tentera Malaysia - ATM).
-
-OPERATIONAL CONTEXT:
-- Supporting TLDM (Royal Malaysian Navy), TUDM (Royal Malaysian Air Force), and TDM (Malaysian Army)
-- Key operations: OP PASIR (Malacca Strait), OP SABAH TIMUR (ESSCOM), sovereignty patrols in South China Sea
-- Coordinating with MMEA (Malaysian Maritime Enforcement Agency) and PDRM (Royal Malaysian Police)
-
-THREAT ENVIRONMENT:
-- State actors: Chinese coast guard (CCG), research vessels, and 'Little Blue Men' maritime militia
-- Non-state actors: Abu Sayyaf/ISSP KFR groups, pirates, smuggling networks
-- Critical infrastructure: PETRONAS offshore platforms (Kasawari gas field)
-
-You provide:
-- Threat analysis specific to Malaysian territorial waters and EEZ
-- Countermeasure recommendations within MAF capabilities
-- Kill chain analysis for both state and non-state threats
-- Spectrum management for joint operations
-- Cost-effective solutions for budget constraints
-
-Respond in a concise, military-professional manner. Use technical terminology appropriately.
-When discussing threats, provide confidence levels, recommended actions, and cost implications.
-Reference specific Malaysian assets (KD Lekiu, F/A-18D, LCS, etc.) when relevant.
-Support diplomatic objectives - Malaysia maintains strategic neutrality."""
 
         chat = LlmChat(
             api_key=api_key,
-            session_id=f"aegis-{uuid.uuid4()}",
+            session_id=f"halimun-{uuid.uuid4()}",
             system_message=system_message
         ).with_model("gemini", "gemini-2.5-flash")
         
