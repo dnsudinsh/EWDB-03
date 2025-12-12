@@ -967,87 +967,43 @@ SCENARIOS = [
 # ============ AI INTEGRATION ============
 
 async def get_ai_response(query: str, context: Dict[str, Any] = None) -> str:
-        "technique_type": "jamming",
-        "description": "Man-portable jammer for MAF infantry to detect drone controllers and locate hidden transmitters",
-        "success_rate": 0.75,
-        "resource_cost": "low",
-        "applicable_threats": ["uav_datalink", "communication", "commercial_radio"],
-        "side_effects": "Short range, requires line of sight"
-    },
-    {
-        "name": "COMINT/DF Triangulation Array",
-        "technique_type": "detection",
-        "description": "Multi-site direction finding from Lumut, Langkawi, and Johor to triangulate pirate communications",
-        "success_rate": 0.88,
-        "resource_cost": "high",
-        "applicable_threats": ["communication", "vhf_radio", "satellite_phone"],
-        "side_effects": "Requires coordination across multiple stations"
-    },
-    {
-        "name": "GPS Spoofing Defense",
-        "technique_type": "cyber",
-        "description": "Counter-spoofing system to protect PETRONAS platforms from GPS manipulation",
-        "success_rate": 0.78,
-        "resource_cost": "medium",
-        "applicable_threats": ["gps_spoofing", "navigation_attack"],
-        "side_effects": "May require temporary GPS blackout for calibration"
-    },
-    {
-        "name": "Frequency Agility Mode - NS 100",
-        "technique_type": "protection",
-        "description": "Rapid frequency hopping on Thales NS 100 radar to resist CCG jamming",
-        "success_rate": 0.85,
-        "resource_cost": "low",
-        "applicable_threats": ["noise_jamming", "barrage_jamming"],
-        "side_effects": "Reduced detection range during frequency transitions"
-    },
-    {
-        "name": "AI Spectrum Manager",
-        "technique_type": "coordination",
-        "description": "ML-driven spectrum allocation between TLDM, TUDM, and MMEA to prevent fratricide",
-        "success_rate": 0.92,
-        "resource_cost": "medium",
-        "applicable_threats": ["spectrum_congestion", "friendly_interference"],
-        "side_effects": "Requires real-time connectivity to all units"
-    },
-    {
-        "name": "Diplomatic Evidence Generator",
-        "technique_type": "intelligence",
-        "description": "Automated incident reports with signal recordings for MOFA protests",
-        "success_rate": 0.95,
-        "resource_cost": "low",
-        "applicable_threats": ["sovereignty_intrusion", "eez_violation"],
-        "side_effects": "None - passive collection"
-    },
-    {
-        "name": "Cyber-EW Malware Injection",
-        "technique_type": "cyber",
-        "description": "Inject tracking malware into captured militant devices to map entire KFR networks",
-        "success_rate": 0.70,
-        "resource_cost": "high",
-        "applicable_threats": ["kfr_network", "smuggling_network"],
-        "side_effects": "Risk of exposure, requires captured devices"
-    }
-]
+    """Get AI response using Gemini 2.5 Flash via emergentintegrations"""
+    try:
+        from emergentintegrations.llm.chat import LlmChat, UserMessage
+        
+        api_key = os.environ.get('EMERGENT_LLM_KEY')
+        if not api_key:
+            return "AI system offline - API key not configured"
+        
+        system_message = """You are PROJEK HALIMUN AI Assistant - Himpunan Analisis Lindungan Intelijen Medan Udara Negara.
+You serve the Malaysian Armed Forces (Angkatan Tentera Malaysia - ATM) as an Electronic Warfare decision support system.
 
-SCENARIOS = [
-    {
-        "id": "scenario_1",
-        "name": "Selat Melaka Guardian",
-        "name_bm": "Penjaga Selat Melaka",
-        "description": "Maritime Domain Awareness & Anti-Piracy operations in the critical Malacca Strait choke point between Port Klang and Pulau Pinang",
-        "region": "Selat Melaka (Malacca Strait)",
-        "center_lat": 4.0,
-        "center_lng": 100.4,
-        "zoom": 8,
-        "emitters": ["Xiang Yang Hong 03 - Research Vessel", "MV Sinar Kudus - Pirate Mothership", "Vietnamese Fishing Fleet - GPS Spoofed", "KD Lekiu - TLDM Frigate", "Lumut EW Station"],
-        "threat_summary": "Multi-threat environment: State actor ISR (Chinese research vessel), pirate mothership coordinating fast boat attacks, illegal fishing with GPS spoofing. Support OP PASIR and MMEA cooperation.",
-        "ew_focus": ["Electronic Support (ES)", "COMINT/DF", "AIS Correlation", "Pattern of Life Analysis"],
-        "operations": ["OP PASIR", "MMEA Joint Ops"]
-    },
-    {
-        "id": "scenario_2", 
-        "name": "Rajawali Shield",
+SYSTEM TAGLINE: "Halimun menjadi perisai senyap angkasa memayungi negara"
+(The Mist becomes the silent shield of the skies protecting the nation)
+
+OPERATIONAL CONTEXT:
+- Primary users: TLDM (Royal Malaysian Navy), TUDM (Royal Malaysian Air Force), TDM (Malaysian Army), ESSCOM
+- Key operations: OP PASIR (Malacca Strait), OP SABAH TIMUR (ESSCOM), SCS Sovereignty Patrols
+- Partner agencies: MMEA (Maritime Enforcement), PDRM (Police), ReCAAP ISC
+
+THREE DEMONSTRATION SCENARIOS:
+1. SELAT MELAKA GUARDIAN - Anti-piracy & maritime domain awareness (Quick Win - 7 min)
+2. RAJAWALI SHIELD - ESSCOM border surveillance vs KFR/smuggling (Tactical - 8 min)  
+3. NUSANTARA SPECTRUM - SCS strategic deterrence vs CCG/PLA (Strategic - 10 min)
+
+KEY CAPABILITIES:
+- Anomaly detection: Calculate threat scores from AIS correlation, emission patterns
+- Pattern-of-life analysis: ML models trained on 6 months historical data
+- Voice fingerprinting: Identify known KFR leaders (Abu Sayyaf/ISSP)
+- Escalation prediction: Based on 100+ historical SCS encounters
+- Diplomatic evidence: Auto-generate UNCLOS-compliant incident reports
+
+RESPONSE FORMAT:
+- Use military-professional Malay/English mix terminology
+- Provide confidence levels (%) and cost implications (RM)
+- Reference specific MAF assets: KD Lekiu, KD Rencong, F/A-18D, EC-725, etc.
+- Support Malaysia's strategic neutrality - proportional, non-kinetic responses
+- Format for quick comprehension in tactical environment"""
         "name_bm": "Perisai Rajawali",
         "description": "Sabah Eastern Security Command (ESSCOM) border surveillance against KFR groups, smuggling networks, and intrusion drones in ESSZONE from Semporna to Tawau",
         "region": "ESSZONE - Sabah Timur",
