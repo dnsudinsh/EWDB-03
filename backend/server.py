@@ -109,7 +109,7 @@ class ChatResponse(BaseModel):
     response: str
     context: Optional[Dict[str, Any]] = None
 
-# ============ SAMPLE DATA - PROJEK HALIMUN - MALAYSIAN ARMED FORCES ============
+# ============ SAMPLE DATA - EW HALIMUNAN ATM - MALAYSIAN ARMED FORCES ============
 
 # Malacca Strait Commercial Radar Database
 MALACCA_RADAR_DB = {
@@ -975,7 +975,7 @@ async def get_ai_response(query: str, context: Dict[str, Any] = None) -> str:
         if not api_key:
             return "AI system offline - API key not configured"
         
-        system_message = """You are PROJEK HALIMUN AI Assistant - Himpunan Analisis Lindungan Intelijen Medan Udara Negara.
+        system_message = """You are EW HALIMUNAN ATM AI Assistant - Himpunan Analisis Lindungan Intelijen Medan Udara Negara.
 You serve the Malaysian Armed Forces (Angkatan Tentera Malaysia - ATM) as an Electronic Warfare decision support system.
 
 SYSTEM TAGLINE: "Halimun menjadi perisai senyap angkasa memayungi negara"
@@ -1113,7 +1113,7 @@ async def root():
 async def health_check():
     return {
         "status": "healthy",
-        "system": "PROJEK HALIMUN",
+        "system": "EW HALIMUNAN ATM",
         "version": "1.0.0",
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
@@ -1383,7 +1383,7 @@ async def root_health_check():
     """Health check endpoint for Kubernetes liveness/readiness probes"""
     return {
         "status": "healthy",
-        "system": "PROJEK HALIMUN",
+        "system": "EW HALIMUNAN ATM",
         "version": "1.0.0",
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
@@ -1406,7 +1406,7 @@ logger = logging.getLogger(__name__)
 @app.on_event("startup")
 async def startup_event():
     """Initialize database with sample data if empty"""
-    logger.info("PROJEK HALIMUN - Memulakan Sistem...")
+    logger.info("EW HALIMUNAN ATM - Memulakan Sistem...")
     
     # Initialize countermeasures if empty
     count = await db.countermeasures.count_documents({})
@@ -1416,9 +1416,9 @@ async def startup_event():
             await db.countermeasures.insert_one(cm_obj)
         logger.info("Pangkalan data countermeasures diinisialisasi")
     
-    logger.info("PROJEK HALIMUN - Sistem Aktif")
+    logger.info("EW HALIMUNAN ATM - Sistem Aktif")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
-    logger.info("PROJEK HALIMUN - Sistem Ditutup")
+    logger.info("EW HALIMUNAN ATM - Sistem Ditutup")
