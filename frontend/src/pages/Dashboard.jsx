@@ -103,7 +103,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-100 overflow-hidden" data-testid="aegis-dashboard">
+    <div className="min-h-screen bg-[#0a1628] text-slate-100 overflow-hidden" data-testid="aegis-dashboard">
       {/* Header Bar */}
       <header className="h-14 bg-[#0f172a] border-b border-slate-800 flex items-center justify-between px-4">
         <div className="flex items-center gap-4">
