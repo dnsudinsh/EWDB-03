@@ -1298,21 +1298,28 @@ async def ai_analyze_emitter(emitter_id: str):
     """Get AI analysis of a specific emitter"""
     emitter = await db.emitters.find_one({"id": emitter_id}, {"_id": 0})
     if not emitter:
-        # Try to find in sample data
+        # Try to find in sample data by ID
         emitter = next((e for e in SAMPLE_EMITTERS if e.get("id") == emitter_id), None)
+    if not emitter:
+        # Try to find by name (URL decoded)
+        from urllib.parse import unquote
+        decoded_id = unquote(emitter_id)
+        emitter = next((e for e in SAMPLE_EMITTERS if e.get("name") == decoded_id), None)
     
     if not emitter:
         raise HTTPException(status_code=404, detail="Emitter not found")
     
-    query = f"""Analyze this electronic warfare emitter and provide tactical assessment:
+    query = f"""Analyze this electronic warfare emitter and provide tactical assessment for Malaysian Armed Forces:
     Name: {emitter.get('name')}
     Type: {emitter.get('emitter_type')}
     Origin: {emitter.get('origin')}
     Frequency: {emitter.get('frequency_min')}-{emitter.get('frequency_max')} MHz
     Platform: {emitter.get('platform')}
     Threat Level: {emitter.get('threat_level')}
+    Affiliation: {emitter.get('affiliation')}
+    Description: {emitter.get('description', 'N/A')}
     
-    Provide: 1) Threat assessment 2) Likely mission 3) Recommended countermeasures 4) Kill chain position"""
+    Provide in Malay/English mix: 1) Threat assessment 2) Likely mission 3) Recommended countermeasures 4) Kill chain position"""
     
     analysis = await get_ai_response(query)
     
