@@ -60,9 +60,9 @@ const MapUpdater = ({ emitters }) => {
 const BattleMap = ({ emitters = [], onEmitterSelect, selectedEmitter }) => {
   const mapRef = useRef(null);
   
-  // Default center (Taiwan Strait area)
-  const defaultCenter = [25.0, 121.0];
-  const defaultZoom = 6;
+  // Default center (Malaysia - Selat Melaka)
+  const defaultCenter = [4.5, 108.0];
+  const defaultZoom = 5;
 
   const getEmitterColor = (affiliation) => {
     const colors = {
