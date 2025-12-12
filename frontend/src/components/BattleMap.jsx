@@ -66,8 +66,8 @@ const BattleMap = ({ emitters = [], onEmitterSelect, selectedEmitter }) => {
 
   const getEmitterColor = (affiliation) => {
     const colors = {
-      hostile: '#ef4444',
-      friendly: '#0ea5e9',
+      hostile: '#dc2626',
+      friendly: '#10b981',
       neutral: '#64748b',
       unknown: '#f59e0b'
     };
