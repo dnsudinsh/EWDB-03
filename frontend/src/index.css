@@ -5,53 +5,55 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* AEGIS MIND - Stealth Command Theme */
+/* PROJEK HALIMUN - Malaysian Armed Forces Theme */
+/* "Halimun menjadi perisai senyap angkasa memayungi negara" */
 :root {
-  /* Backgrounds */
-  --bg-default: #020617;
-  --bg-paper: #0f172a;
-  --bg-overlay: rgba(2, 6, 23, 0.9);
+  /* Backgrounds - Deep military green/blue */
+  --bg-default: #0a1628;
+  --bg-paper: #0f1f32;
+  --bg-overlay: rgba(10, 22, 40, 0.95);
   
   /* Text */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #475569;
+  --text-primary: #e8f4f8;
+  --text-secondary: #8ba3b5;
+  --text-muted: #4a6478;
   
-  /* Status Colors */
-  --status-hostile: #ef4444;
-  --status-friendly: #0ea5e9;
+  /* Malaysian Military Status Colors */
+  --status-hostile: #dc2626;
+  --status-friendly: #10b981;
   --status-unknown: #f59e0b;
   --status-neutral: #64748b;
   --status-ok: #22c55e;
   
-  /* Accent */
-  --accent-primary: #0ea5e9;
-  --accent-glow: rgba(14, 165, 233, 0.5);
+  /* Accent - Malaysian Blue/Teal */
+  --accent-primary: #14b8a6;
+  --accent-secondary: #0891b2;
+  --accent-glow: rgba(20, 184, 166, 0.5);
   
   /* Borders */
-  --border-default: #1e293b;
-  --border-active: #38bdf8;
+  --border-default: #1e3a4f;
+  --border-active: #14b8a6;
 
-  /* Shadcn variables */
-  --background: 222 47% 3%;
-  --foreground: 210 40% 98%;
-  --card: 217 33% 10%;
-  --card-foreground: 210 40% 98%;
-  --popover: 217 33% 10%;
-  --popover-foreground: 210 40% 98%;
-  --primary: 199 89% 48%;
-  --primary-foreground: 222 47% 3%;
-  --secondary: 217 33% 15%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217 33% 15%;
-  --muted-foreground: 215 20% 55%;
-  --accent: 199 89% 48%;
-  --accent-foreground: 222 47% 3%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
-  --ring: 199 89% 48%;
+  /* Shadcn variables - Military theme */
+  --background: 210 50% 7%;
+  --foreground: 195 50% 95%;
+  --card: 210 40% 12%;
+  --card-foreground: 195 50% 95%;
+  --popover: 210 40% 12%;
+  --popover-foreground: 195 50% 95%;
+  --primary: 168 76% 42%;
+  --primary-foreground: 210 50% 7%;
+  --secondary: 210 40% 18%;
+  --secondary-foreground: 195 50% 95%;
+  --muted: 210 40% 18%;
+  --muted-foreground: 200 25% 50%;
+  --accent: 168 76% 42%;
+  --accent-foreground: 210 50% 7%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 195 50% 95%;
+  --border: 210 40% 20%;
+  --input: 210 40% 20%;
+  --ring: 168 76% 42%;
   --radius: 0.25rem;
 }
 
