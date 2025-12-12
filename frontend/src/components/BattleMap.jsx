@@ -189,24 +189,24 @@ const BattleMap = ({ emitters = [], onEmitterSelect, selectedEmitter }) => {
       </MapContainer>
 
       {/* Map Legend */}
-      <div className="absolute bottom-4 left-4 bg-slate-900/90 border border-slate-700 p-3 rounded-sm text-xs z-[1000]" data-testid="map-legend">
-        <div className="font-bold text-slate-400 uppercase tracking-wider mb-2">Legend</div>
+      <div className="absolute bottom-4 left-4 bg-[#0f1f32]/95 border border-slate-700 p-3 rounded-sm text-xs z-[1000]" data-testid="map-legend">
+        <div className="font-bold text-teal-400 uppercase tracking-wider mb-2">Petunjuk / Legend</div>
         <div className="space-y-1.5">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-red-500 rotate-45"></div>
-            <span className="text-slate-300">Hostile</span>
+            <div className="w-3 h-3 bg-red-600 rotate-45"></div>
+            <span className="text-slate-300">Hostile / Ancaman</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-sky-500 rounded-full"></div>
-            <span className="text-slate-300">Friendly</span>
+            <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
+            <span className="text-slate-300">Friendly / Kawan</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
-            <span className="text-slate-300">Unknown</span>
+            <span className="text-slate-300">Unknown / Tidak Dikenali</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-slate-500 rounded-full"></div>
-            <span className="text-slate-300">Neutral</span>
+            <span className="text-slate-300">Neutral / Berkecuali</span>
           </div>
         </div>
       </div>
