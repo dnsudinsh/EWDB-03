@@ -245,12 +245,12 @@ const MessageBubble = ({ message }) => {
   return (
     <div className={`flex gap-3 ${isUser ? 'flex-row-reverse' : ''}`} data-testid={isUser ? "user-message" : "ai-message"}>
       <div className={`w-8 h-8 rounded-sm flex items-center justify-center flex-shrink-0 ${
-        isUser ? 'bg-slate-700' : 'bg-sky-500/20'
+        isUser ? 'bg-slate-700' : 'bg-teal-500/20'
       }`}>
         {isUser ? (
           <User className="w-4 h-4 text-slate-300" />
         ) : (
-          <Bot className="w-4 h-4 text-sky-400" />
+          <Bot className="w-4 h-4 text-teal-400" />
         )}
       </div>
       
