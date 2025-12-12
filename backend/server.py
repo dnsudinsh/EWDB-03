@@ -965,69 +965,8 @@ SCENARIOS = [
 ]
 
 # ============ AI INTEGRATION ============
-        "affiliation": "hostile",
-        "description": "Electronic reconnaissance aircraft probing MAF air defense"
-    },
-    {
-        "name": "KD Keris - LCS Patrol",
-        "emitter_type": "radar",
-        "platform": "ship",
-        "origin": "Malaysia",
-        "threat_level": "low",
-        "frequency_min": 9000,
-        "frequency_max": 9500,
-        "prf": 4000,
-        "pulse_width": 0.4,
-        "modulation_type": "pulse",
-        "latitude": 5.65,
-        "longitude": 112.0,
-        "affiliation": "friendly",
-        "description": "Littoral Combat Ship with Thales NS 100 radar"
-    },
-    {
-        "name": "F/A-18D Hornet - TUDM",
-        "emitter_type": "radar",
-        "platform": "aircraft",
-        "origin": "Malaysia",
-        "threat_level": "low",
-        "frequency_min": 8500,
-        "frequency_max": 10500,
-        "prf": 6000,
-        "pulse_width": 0.2,
-        "modulation_type": "pulse",
-        "latitude": 5.9,
-        "longitude": 111.8,
-        "affiliation": "friendly",
-        "description": "TUDM fighter with SUPER NASA radar on air defense patrol"
-    },
-    {
-        "name": "Kasawari Gas Platform",
-        "emitter_type": "communication",
-        "platform": "ground",
-        "origin": "Malaysia",
-        "threat_level": "low",
-        "frequency_min": 450.0,
-        "frequency_max": 470.0,
-        "modulation_type": "digital",
-        "latitude": 5.7,
-        "longitude": 111.95,
-        "affiliation": "friendly",
-        "description": "PETRONAS critical infrastructure requiring EW protection"
-    }
-]
 
-SAMPLE_COUNTERMEASURES = [
-    {
-        "name": "Dagaie NG Decoy System",
-        "technique_type": "deception",
-        "description": "Naval decoy system on TLDM LCS that mimics commercial tanker signatures to draw out pirates",
-        "success_rate": 0.82,
-        "resource_cost": "medium",
-        "applicable_threats": ["radar", "anti_ship_missile", "pirate_targeting"],
-        "side_effects": "Limited inventory per mission"
-    },
-    {
-        "name": "Portable EW Jammer - Handheld",
+async def get_ai_response(query: str, context: Dict[str, Any] = None) -> str:
         "technique_type": "jamming",
         "description": "Man-portable jammer for MAF infantry to detect drone controllers and locate hidden transmitters",
         "success_rate": 0.75,
