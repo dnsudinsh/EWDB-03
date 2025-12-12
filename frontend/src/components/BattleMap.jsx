@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -41,18 +41,29 @@ const createCustomIcon = (affiliation, threatLevel) => {
   });
 };
 
-// Map bounds updater component
-const MapUpdater = ({ emitters }) => {
+// Map bounds updater component - only fits bounds on initial load or significant emitter count change
+const MapUpdater = ({ emitters, initialBoundsSet, onInitialBoundsSet }) => {
   const map = useMap();
+  const prevEmitterCountRef = useRef(0);
   
   useEffect(() => {
+    // Only fit bounds if:
+    // 1. We have emitters AND
+    // 2. Either initial bounds haven't been set OR emitter count changed significantly (scenario change)
     if (emitters && emitters.length > 0) {
-      const bounds = L.latLngBounds(
-        emitters.map(e => [e.latitude, e.longitude])
-      );
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 8 });
+      const emitterCountChanged = Math.abs(emitters.length - prevEmitterCountRef.current) > 5;
+      
+      if (!initialBoundsSet || emitterCountChanged) {
+        const bounds = L.latLngBounds(
+          emitters.map(e => [e.latitude, e.longitude])
+        );
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 8 });
+        onInitialBoundsSet();
+      }
+      
+      prevEmitterCountRef.current = emitters.length;
     }
-  }, [emitters, map]);
+  }, [emitters, map, initialBoundsSet, onInitialBoundsSet]);
   
   return null;
 };
