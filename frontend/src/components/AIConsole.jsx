@@ -12,7 +12,7 @@ const AIConsole = ({ selectedEmitter }) => {
   const [messages, setMessages] = useState([
     {
       role: "system",
-      content: "PROJEK HALIMUN AI online. Sedia untuk analisis taktikal EW bagi operasi ATM - TLDM, TUDM, TDM.",
+      content: "EW HALIMUNAN ATM AI online. Sedia untuk analisis taktikal EW bagi operasi ATM - TLDM, TUDM, TDM.",
       timestamp: new Date().toISOString()
     }
   ]);

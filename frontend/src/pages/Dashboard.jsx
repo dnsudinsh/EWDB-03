@@ -94,7 +94,7 @@ const Dashboard = () => {
             <div className="absolute inset-4 border-2 border-teal-500 rounded-full"></div>
             <Radar className="absolute inset-0 m-auto w-8 h-8 text-teal-500" />
           </div>
-          <h2 className="text-xl font-bold text-slate-100 tracking-wider uppercase">PROJEK HALIMUN</h2>
+          <h2 className="text-xl font-bold text-slate-100 tracking-wider uppercase">EW HALIMUNAN ATM</h2>
           <p className="text-sm text-slate-500 mt-2 font-mono">MEMULAKAN SISTEM...</p>
           <p className="text-xs text-teal-500/60 mt-1 italic">Himpunan Analisis Lindungan Intelijen Medan Udara Negara</p>
         </div>
@@ -110,7 +110,7 @@ const Dashboard = () => {
           <div className="flex items-center gap-2">
             <Shield className="w-6 h-6 text-teal-500" />
             <span className="font-bold text-lg tracking-tight uppercase" style={{ fontFamily: 'Chivo, sans-serif' }}>
-              PROJEK HALIMUN
+              EW HALIMUNAN ATM
             </span>
           </div>
           <span className="text-xs text-slate-400 border-l border-slate-700 pl-4 italic">

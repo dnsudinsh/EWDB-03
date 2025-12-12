@@ -189,7 +189,7 @@ const Dashboard = () => {
             <Radar className="absolute inset-0 m-auto w-6 h-6 sm:w-8 sm:h-8 text-teal-500" />
           </div>
           <h2 className="text-lg sm:text-xl font-bold text-slate-100 tracking-wider uppercase">
-            PROJEK HALIMUN
+            EW HALIMUNAN ATM
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 mt-2 font-mono">
             MEMULAKAN SISTEM...
@@ -286,7 +286,7 @@ const Dashboard = () => {
                   fontFamily: 'Chivo, sans-serif'
                 }}
               >
-                PROJEK HALIMUN
+                EW HALIMUNAN ATM
               </span>
               {!breakpoints.isMobile && (
                 <span className="text-xs text-slate-400 border-l border-slate-700 pl-3 ml-3 italic hidden lg:inline">
