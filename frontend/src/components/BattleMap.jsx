@@ -70,6 +70,19 @@ const MapUpdater = ({ emitters, initialBoundsSet, onInitialBoundsSet }) => {
 
 const BattleMap = ({ emitters = [], onEmitterSelect, selectedEmitter }) => {
   const mapRef = useRef(null);
+  const [initialBoundsSet, setInitialBoundsSet] = useState(false);
+  
+  // Callback to mark initial bounds as set
+  const handleInitialBoundsSet = useCallback(() => {
+    setInitialBoundsSet(true);
+  }, []);
+  
+  // Reset bounds flag when emitters array becomes empty (e.g., scenario reset)
+  useEffect(() => {
+    if (emitters.length === 0) {
+      setInitialBoundsSet(false);
+    }
+  }, [emitters.length]);
   
   // Default center (Malaysia - Selat Melaka)
   const defaultCenter = [4.5, 108.0];
