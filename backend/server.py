@@ -963,21 +963,8 @@ SCENARIOS = [
         }
     }
 ]
-        "description": "'Little Blue Men' civilian vessels creating spectrum chaos"
-    },
-    {
-        "name": "H-6K Elint Aircraft",
-        "emitter_type": "radar",
-        "platform": "aircraft",
-        "origin": "China",
-        "threat_level": "critical",
-        "frequency_min": 8000,
-        "frequency_max": 12000,
-        "prf": 5000,
-        "pulse_width": 0.3,
-        "modulation_type": "chirp",
-        "latitude": 6.1,
-        "longitude": 112.5,
+
+# ============ AI INTEGRATION ============
         "affiliation": "hostile",
         "description": "Electronic reconnaissance aircraft probing MAF air defense"
     },
