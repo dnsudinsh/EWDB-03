@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-12T10:06:54.238629",
+  "timestamp": "2025-12-12T10:31:33.446137",
   "total_tests": 32,
   "passed_tests": 32,
   "success_rate": 100.0,
@@ -8,26 +8,26 @@
       "test_name": "Health Check",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.237301",
+      "timestamp": "2025-12-12T10:31:09.751207",
       "response_data": {
         "status": "healthy",
         "system": "PROJEK HALIMUN",
         "version": "1.0.0",
-        "timestamp": "2025-12-12T10:06:32.234233+00:00"
+        "timestamp": "2025-12-12T10:31:09.748104+00:00"
       }
     },
     {
       "test_name": "Health Check - Response Format",
       "success": true,
       "details": "System: PROJEK HALIMUN, Status: healthy",
-      "timestamp": "2025-12-12T10:06:32.237734",
+      "timestamp": "2025-12-12T10:31:09.751677",
       "response_data": null
     },
     {
       "test_name": "Get Emitters",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.273136",
+      "timestamp": "2025-12-12T10:31:09.791384",
       "response_data": [
         {
           "id": "55fa7974-fc0e-4b03-99d5-d57341a1f9cc",
@@ -427,28 +427,427 @@
           "affiliation": "neutral",
           "last_detected": "2025-12-12T10:03:16.806117+00:00",
           "created_at": "2025-12-12T10:03:16.806122+00:00"
+        },
+        {
+          "id": "198f98f3-5360-467c-a6a8-59eac996c059",
+          "name": "KD Lekiu - TLDM Frigate",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 8500.0,
+          "frequency_max": 9500.0,
+          "prf": 3500.0,
+          "pulse_width": 0.5,
+          "modulation_type": "pulse",
+          "latitude": 5.5,
+          "longitude": 100.0,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:06:54.231942+00:00",
+          "created_at": "2025-12-12T10:06:54.231949+00:00"
+        },
+        {
+          "id": "86aebcbb-6227-43c6-b4d2-d0e6b382f4d5",
+          "name": "KD Gempita - Lumut EW Station",
+          "emitter_type": "elint",
+          "platform": "ground",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 50.0,
+          "frequency_max": 3800.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "passive",
+          "latitude": 4.24,
+          "longitude": 100.62,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:06:54.232427+00:00",
+          "created_at": "2025-12-12T10:06:54.232431+00:00"
+        },
+        {
+          "id": "bac9f9e3-b100-45ee-b0aa-ebdebe5da6b3",
+          "name": "MMEA Kimanis - OPV",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 9200.0,
+          "frequency_max": 9500.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "pulse",
+          "latitude": 5.75,
+          "longitude": 100.25,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:06:54.232828+00:00",
+          "created_at": "2025-12-12T10:06:54.232831+00:00"
+        },
+        {
+          "id": "a739864c-f750-4da5-b236-1554bded72b9",
+          "name": "ATR-72 MPA - En Route",
+          "emitter_type": "radar",
+          "platform": "aircraft",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 9300.0,
+          "frequency_max": 9500.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "pulse",
+          "latitude": 3.13,
+          "longitude": 101.55,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:06:54.233092+00:00",
+          "created_at": "2025-12-12T10:06:54.233094+00:00"
+        },
+        {
+          "id": "b16087b4-0e49-4bfc-8940-1664d75a1c47",
+          "name": "MV Ocean Trader - Distress",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Panama",
+          "threat_level": "medium",
+          "frequency_min": 156.8,
+          "frequency_max": 156.8,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "FM",
+          "latitude": 5.65,
+          "longitude": 100.15,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "neutral",
+          "last_detected": "2025-12-12T10:06:54.233350+00:00",
+          "created_at": "2025-12-12T10:06:54.233352+00:00"
+        },
+        {
+          "id": "f226a8cc-24f7-41ee-9ca4-1e1741355c0a",
+          "name": "Fast Attack Craft 1 - No AIS",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "critical",
+          "frequency_min": 462.0,
+          "frequency_max": 467.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "encrypted_fm",
+          "latitude": 5.62,
+          "longitude": 100.12,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:06:54.233606+00:00",
+          "created_at": "2025-12-12T10:06:54.233609+00:00"
+        },
+        {
+          "id": "6f4064b5-ea47-47b9-8966-2363ba560724",
+          "name": "Fast Attack Craft 2 - No AIS",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "critical",
+          "frequency_min": 462.0,
+          "frequency_max": 467.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "encrypted_fm",
+          "latitude": 5.68,
+          "longitude": 100.18,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:06:54.233843+00:00",
+          "created_at": "2025-12-12T10:06:54.233847+00:00"
+        },
+        {
+          "id": "c40df2c8-5771-4d39-8f80-d10e241cd0d8",
+          "name": "SS Sunrise - Pirate Mothership",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "high",
+          "frequency_min": 3.5,
+          "frequency_max": 30.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "HF_SSB",
+          "latitude": 5.55,
+          "longitude": 99.95,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:06:54.234072+00:00",
+          "created_at": "2025-12-12T10:06:54.234075+00:00"
+        },
+        {
+          "id": "b2d195e6-e8ec-4ed3-8ed2-3491fa14b3cf",
+          "name": "Xiang Yang Hong 06 - Research Vessel",
+          "emitter_type": "sonar",
+          "platform": "ship",
+          "origin": "China",
+          "threat_level": "high",
+          "frequency_min": 12.0,
+          "frequency_max": 12.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "multi_beam",
+          "latitude": 4.85,
+          "longitude": 99.75,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "unknown",
+          "last_detected": "2025-12-12T10:06:54.234302+00:00",
+          "created_at": "2025-12-12T10:06:54.234306+00:00"
+        },
+        {
+          "id": "6e990192-e0b8-4470-8147-17b41e9c8653",
+          "name": "VLCC TI Europe - Radar Fault",
+          "emitter_type": "radar",
+          "platform": "ship",
+          "origin": "Belgium",
+          "threat_level": "low",
+          "frequency_min": 9300.0,
+          "frequency_max": 9500.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "pulse",
+          "latitude": 3.95,
+          "longitude": 100.35,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "neutral",
+          "last_detected": "2025-12-12T10:06:54.234553+00:00",
+          "created_at": "2025-12-12T10:06:54.234556+00:00"
+        },
+        {
+          "id": "f34a152e-8ac9-4001-91c7-1be6bf48f8fb",
+          "name": "11 RAD - Pulau Bum Bum",
+          "emitter_type": "communication",
+          "platform": "ground",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 225.0,
+          "frequency_max": 400.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "encrypted",
+          "latitude": 4.48,
+          "longitude": 118.68,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:20:24.263016+00:00",
+          "created_at": "2025-12-12T10:20:24.263023+00:00"
+        },
+        {
+          "id": "855845fe-cd57-4cbe-838e-dc6ff440ae6c",
+          "name": "PASKAL Team - Zodiac Insert",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 300.0,
+          "frequency_max": 320.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "encrypted_burst",
+          "latitude": 4.52,
+          "longitude": 118.72,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:20:24.263594+00:00",
+          "created_at": "2025-12-12T10:20:24.263600+00:00"
+        },
+        {
+          "id": "b0da876c-4793-46f5-afe8-350b4e25d25b",
+          "name": "EC-725 Caracal - Overwatch",
+          "emitter_type": "radar",
+          "platform": "aircraft",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 9000.0,
+          "frequency_max": 9500.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "pulse",
+          "latitude": 4.55,
+          "longitude": 118.6,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:20:24.264100+00:00",
+          "created_at": "2025-12-12T10:20:24.264105+00:00"
+        },
+        {
+          "id": "c9d2d7c6-404b-4984-92bc-fc5bdeaf1820",
+          "name": "Tanjung Labian Radar",
+          "emitter_type": "radar",
+          "platform": "ground",
+          "origin": "Malaysia",
+          "threat_level": "low",
+          "frequency_min": 2700.0,
+          "frequency_max": 2900.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "pulse",
+          "latitude": 4.35,
+          "longitude": 118.4,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "friendly",
+          "last_detected": "2025-12-12T10:20:24.264667+00:00",
+          "created_at": "2025-12-12T10:20:24.264673+00:00"
+        },
+        {
+          "id": "8b6f9d3f-62f1-4d08-932e-13230688e082",
+          "name": "KFR Signal 1 - Baofeng Encrypted",
+          "emitter_type": "communication",
+          "platform": "ground",
+          "origin": "Philippines",
+          "threat_level": "critical",
+          "frequency_min": 462.5625,
+          "frequency_max": 462.5625,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "encrypted_fm",
+          "latitude": 4.46,
+          "longitude": 118.7,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:20:24.265194+00:00",
+          "created_at": "2025-12-12T10:20:24.265206+00:00"
+        },
+        {
+          "id": "8074f317-2c53-4955-9671-63e849eb2bf2",
+          "name": "KFR Pump Boat 1",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Philippines",
+          "threat_level": "critical",
+          "frequency_min": 462.0,
+          "frequency_max": 467.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "FM",
+          "latitude": 4.44,
+          "longitude": 118.73,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:20:24.265726+00:00",
+          "created_at": "2025-12-12T10:20:24.265733+00:00"
+        },
+        {
+          "id": "7e8ef35c-90bc-4889-aca4-cbab3ff055cd",
+          "name": "KFR Pump Boat 2",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Philippines",
+          "threat_level": "critical",
+          "frequency_min": 462.0,
+          "frequency_max": 467.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "FM",
+          "latitude": 4.45,
+          "longitude": 118.75,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:20:24.266203+00:00",
+          "created_at": "2025-12-12T10:20:24.266209+00:00"
+        },
+        {
+          "id": "3baa82d2-7de1-492c-9a20-cf38922b66e7",
+          "name": "Smuggler Burst Signal",
+          "emitter_type": "communication",
+          "platform": "ship",
+          "origin": "Unknown",
+          "threat_level": "high",
+          "frequency_min": 446.0,
+          "frequency_max": 446.5,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "burst_fm",
+          "latitude": 4.5,
+          "longitude": 118.8,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:20:24.266667+00:00",
+          "created_at": "2025-12-12T10:20:24.266672+00:00"
+        },
+        {
+          "id": "4ac08f99-5820-48ff-a093-15a8ab8ad159",
+          "name": "DJI Mavic 3 - Recon Drone",
+          "emitter_type": "communication",
+          "platform": "uav",
+          "origin": "Unknown",
+          "threat_level": "high",
+          "frequency_min": 2400.0,
+          "frequency_max": 2483.0,
+          "prf": null,
+          "pulse_width": null,
+          "modulation_type": "FHSS",
+          "latitude": 4.475,
+          "longitude": 118.67,
+          "altitude": 0,
+          "confidence": 0.85,
+          "is_active": true,
+          "affiliation": "hostile",
+          "last_detected": "2025-12-12T10:20:24.267222+00:00",
+          "created_at": "2025-12-12T10:20:24.267228+00:00"
         }
       ]
     },
     {
       "test_name": "Emitters - Data Format",
       "success": true,
-      "details": "Found 19 emitters",
-      "timestamp": "2025-12-12T10:06:32.273574",
+      "details": "Found 38 emitters",
+      "timestamp": "2025-12-12T10:31:09.791817",
       "response_data": null
     },
     {
       "test_name": "Emitters - Structure",
       "success": true,
       "details": "Sample: 11 RAD - Pulau Bum Bum (friendly)",
-      "timestamp": "2025-12-12T10:06:32.273592",
+      "timestamp": "2025-12-12T10:31:09.791838",
       "response_data": null
     },
     {
       "test_name": "Get Scenarios",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.311870",
+      "timestamp": "2025-12-12T10:31:09.826940",
       "response_data": [
         {
           "id": "scenario_1",
@@ -606,145 +1005,249 @@
       "test_name": "Scenarios - Data Format",
       "success": true,
       "details": "Found 3 scenarios",
-      "timestamp": "2025-12-12T10:06:32.312307",
+      "timestamp": "2025-12-12T10:31:09.827370",
       "response_data": null
     },
     {
       "test_name": "Scenarios - Structure",
       "success": true,
       "details": "Sample: SELAT MELAKA GUARDIAN in Selat Melaka (40NM NW of Pulau Pinang)",
-      "timestamp": "2025-12-12T10:06:32.312327",
+      "timestamp": "2025-12-12T10:31:09.827390",
       "response_data": null
     },
     {
       "test_name": "Threat Assessment",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.349868",
+      "timestamp": "2025-12-12T10:31:09.867219",
       "response_data": {
-        "total_threats": 8,
-        "critical_count": 8,
+        "total_threats": 16,
+        "critical_count": 16,
         "assessments": [
           {
             "emitter_id": "e82aef7d-5faa-4aa0-aceb-b7a7e59577b7",
             "emitter_name": "KFR Signal 1 - Baofeng Encrypted",
             "threat_score": 1.0,
-            "kill_chain_phase": "detection",
-            "time_to_impact": 273.25912033689815,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 75.04290876380216,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346408+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863820+00:00"
           },
           {
             "emitter_id": "09c03855-5565-4ced-9b9b-b743430708e8",
             "emitter_name": "KFR Pump Boat 1",
             "threat_score": 1.0,
-            "kill_chain_phase": "tracking",
-            "time_to_impact": 157.9881380481662,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 105.88781411599192,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346418+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863831+00:00"
           },
           {
             "emitter_id": "4c2aa71d-fcf6-4223-8cd7-f9acdc4eac78",
             "emitter_name": "KFR Pump Boat 2",
             "threat_score": 1.0,
-            "kill_chain_phase": "tracking",
-            "time_to_impact": 186.6107327225859,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 212.82901893839647,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346421+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863835+00:00"
           },
           {
             "emitter_id": "ba1b036b-bc89-461e-9f4d-d59e46f16b23",
             "emitter_name": "Fast Attack Craft 1 - No AIS",
             "threat_score": 1.0,
-            "kill_chain_phase": "tracking",
-            "time_to_impact": 138.61203593856675,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 194.16366381842286,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346431+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863843+00:00"
           },
           {
             "emitter_id": "bf32571e-8f14-4e52-a313-c6a2c06d822b",
             "emitter_name": "Fast Attack Craft 2 - No AIS",
             "threat_score": 1.0,
             "kill_chain_phase": "tracking",
-            "time_to_impact": 223.4790817397509,
+            "time_to_impact": 282.2059811075701,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346434+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863846+00:00"
+          },
+          {
+            "emitter_id": "f226a8cc-24f7-41ee-9ca4-1e1741355c0a",
+            "emitter_name": "Fast Attack Craft 1 - No AIS",
+            "threat_score": 1.0,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 294.9925708027176,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863852+00:00"
+          },
+          {
+            "emitter_id": "6f4064b5-ea47-47b9-8966-2363ba560724",
+            "emitter_name": "Fast Attack Craft 2 - No AIS",
+            "threat_score": 1.0,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 196.10886410764613,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863855+00:00"
+          },
+          {
+            "emitter_id": "8b6f9d3f-62f1-4d08-932e-13230688e082",
+            "emitter_name": "KFR Signal 1 - Baofeng Encrypted",
+            "threat_score": 1.0,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 286.215191727101,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863860+00:00"
+          },
+          {
+            "emitter_id": "8074f317-2c53-4955-9671-63e849eb2bf2",
+            "emitter_name": "KFR Pump Boat 1",
+            "threat_score": 1.0,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 168.8791891290023,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863863+00:00"
+          },
+          {
+            "emitter_id": "7e8ef35c-90bc-4889-aca4-cbab3ff055cd",
+            "emitter_name": "KFR Pump Boat 2",
+            "threat_score": 1.0,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 215.5930924519529,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863865+00:00"
           },
           {
             "emitter_id": "0f15e429-eb14-4469-88df-efe5e01d3f17",
             "emitter_name": "Smuggler Burst Signal",
             "threat_score": 0.8999999999999999,
-            "kill_chain_phase": "detection",
-            "time_to_impact": 278.7022648836012,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 38.875849128832144,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346425+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863838+00:00"
           },
           {
             "emitter_id": "7fbbeea8-9ce1-4ba8-a6aa-d9fe030a255f",
             "emitter_name": "DJI Mavic 3 - Recon Drone",
             "threat_score": 0.8999999999999999,
             "kill_chain_phase": "tracking",
-            "time_to_impact": 224.39101601173067,
+            "time_to_impact": 217.02526827516022,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346428+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863840+00:00"
           },
           {
             "emitter_id": "325f59bd-c926-4f32-8cd0-0792ad75f412",
             "emitter_name": "SS Sunrise - Pirate Mothership",
             "threat_score": 0.8999999999999999,
-            "kill_chain_phase": "tracking",
-            "time_to_impact": 174.33050920818656,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 150.21033706784738,
             "recommended_actions": [
               "Activate ECM",
               "Deploy decoys",
               "Maneuver to minimize exposure"
             ],
-            "assessed_at": "2025-12-12T10:06:32.346437+00:00"
+            "assessed_at": "2025-12-12T10:31:09.863849+00:00"
+          },
+          {
+            "emitter_id": "c40df2c8-5771-4d39-8f80-d10e241cd0d8",
+            "emitter_name": "SS Sunrise - Pirate Mothership",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "detection",
+            "time_to_impact": 74.30673819656812,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863857+00:00"
+          },
+          {
+            "emitter_id": "3baa82d2-7de1-492c-9a20-cf38922b66e7",
+            "emitter_name": "Smuggler Burst Signal",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 189.18723592860547,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863868+00:00"
+          },
+          {
+            "emitter_id": "4ac08f99-5820-48ff-a093-15a8ab8ad159",
+            "emitter_name": "DJI Mavic 3 - Recon Drone",
+            "threat_score": 0.8999999999999999,
+            "kill_chain_phase": "tracking",
+            "time_to_impact": 62.32809895473173,
+            "recommended_actions": [
+              "Activate ECM",
+              "Deploy decoys",
+              "Maneuver to minimize exposure"
+            ],
+            "assessed_at": "2025-12-12T10:31:09.863871+00:00"
           }
         ],
-        "timestamp": "2025-12-12T10:06:32.346457+00:00"
+        "timestamp": "2025-12-12T10:31:09.863879+00:00"
       }
     },
     {
       "test_name": "Threats - Structure",
       "success": true,
-      "details": "Total: 8, Critical: 8",
-      "timestamp": "2025-12-12T10:06:32.350290",
+      "details": "Total: 16, Critical: 16",
+      "timestamp": "2025-12-12T10:31:09.867659",
       "response_data": null
     },
     {
       "test_name": "Get Countermeasures",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.385015",
+      "timestamp": "2025-12-12T10:31:09.902324",
       "response_data": [
         {
           "name": "Lumut EW Station Triangulation",
@@ -990,46 +1493,46 @@
       "test_name": "Countermeasures - Data Format",
       "success": true,
       "details": "Found 17 countermeasures",
-      "timestamp": "2025-12-12T10:06:32.385420",
+      "timestamp": "2025-12-12T10:31:09.902732",
       "response_data": null
     },
     {
       "test_name": "Countermeasures - Structure",
       "success": true,
       "details": "Sample: Lumut EW Station Triangulation (detection)",
-      "timestamp": "2025-12-12T10:06:32.385448",
+      "timestamp": "2025-12-12T10:31:09.902752",
       "response_data": null
     },
     {
       "test_name": "System Metrics",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.420438",
+      "timestamp": "2025-12-12T10:31:09.934655",
       "response_data": {
-        "emitters_tracked": 19,
-        "hostile_count": 8,
-        "friendly_count": 8,
+        "emitters_tracked": 38,
+        "hostile_count": 16,
+        "friendly_count": 16,
         "classification_accuracy": 0.947,
-        "processing_latency_ms": 18,
-        "threat_assessment_ms": 72,
-        "ai_response_ms": 557,
-        "uptime_hours": 169,
-        "signals_processed_24h": 97713,
-        "timestamp": "2025-12-12T10:06:32.417102+00:00"
+        "processing_latency_ms": 19,
+        "threat_assessment_ms": 95,
+        "ai_response_ms": 518,
+        "uptime_hours": 441,
+        "signals_processed_24h": 93693,
+        "timestamp": "2025-12-12T10:31:09.931758+00:00"
       }
     },
     {
       "test_name": "Metrics - Structure",
       "success": true,
-      "details": "Tracked: 19, Hostile: 8, Accuracy: 94.7%",
-      "timestamp": "2025-12-12T10:06:32.420874",
+      "details": "Tracked: 38, Hostile: 16, Accuracy: 94.7%",
+      "timestamp": "2025-12-12T10:31:09.935096",
       "response_data": null
     },
     {
       "test_name": "Get Scenario - SELAT MELAKA GUARDIAN",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.454705",
+      "timestamp": "2025-12-12T10:31:09.967195",
       "response_data": {
         "id": "scenario_1",
         "name": "SELAT MELAKA GUARDIAN",
@@ -1096,7 +1599,7 @@
             "description": "TLDM Frigate on OP PASIR patrol duty",
             "scenario": "selat_melaka",
             "callsign": "PASIR-01",
-            "id": "1c59da9f-765a-4934-9519-fd6361508315"
+            "id": "694dc137-ebc3-4b7e-b943-ab35a9d9d9c9"
           },
           {
             "name": "KD Gempita - Lumut EW Station",
@@ -1113,7 +1616,7 @@
             "description": "Coastal EW station monitoring 25,000 sq km of Malacca Strait",
             "scenario": "selat_melaka",
             "coverage_radius_km": 150,
-            "id": "b48d2b5a-0394-40b8-aaa6-56c73a316a56"
+            "id": "fb82e1e4-30ee-4f26-bea7-f366b8ac9126"
           },
           {
             "name": "MMEA Kimanis - OPV",
@@ -1130,7 +1633,7 @@
             "description": "MMEA Offshore Patrol Vessel coordinating with TLDM",
             "scenario": "selat_melaka",
             "callsign": "MMEA-07",
-            "id": "12822f17-4b76-4c79-b74f-f2f5a82aead8"
+            "id": "1ac1339a-92a7-4e06-9b19-cbc9636e5202"
           },
           {
             "name": "ATR-72 MPA - En Route",
@@ -1147,7 +1650,7 @@
             "description": "Maritime Patrol Aircraft en route from Subang",
             "scenario": "selat_melaka",
             "callsign": "ORION-1",
-            "id": "2c610326-2608-460d-ae76-11f024d02701"
+            "id": "b1d076cf-9d76-4e3e-85a9-57c6c56635df"
           },
           {
             "name": "MV Ocean Trader - Distress",
@@ -1165,7 +1668,7 @@
             "scenario": "selat_melaka",
             "ais_status": "active",
             "anomaly_score": 25,
-            "id": "f0fd792a-cca4-4591-881d-15e873e8113d"
+            "id": "4c0be7ed-7a99-496a-b5d5-e312c0a989cc"
           },
           {
             "name": "Fast Attack Craft 1 - No AIS",
@@ -1183,7 +1686,7 @@
             "scenario": "selat_melaka",
             "ais_status": "disabled",
             "anomaly_score": 92,
-            "id": "8cbe87b8-a496-4ff4-8435-2dae0634d3f0"
+            "id": "5d0511be-709f-499f-a3b7-33f73374a378"
           },
           {
             "name": "Fast Attack Craft 2 - No AIS",
@@ -1201,7 +1704,7 @@
             "scenario": "selat_melaka",
             "ais_status": "disabled",
             "anomaly_score": 89,
-            "id": "49f19243-94ad-4db8-9748-f9f90d0eba31"
+            "id": "7269c9d5-6d0a-4a44-9eac-efa434a3c773"
           },
           {
             "name": "SS Sunrise - Pirate Mothership",
@@ -1219,7 +1722,7 @@
             "scenario": "selat_melaka",
             "ais_status": "spoofed",
             "anomaly_score": 95,
-            "id": "874b1306-f7f4-4ae2-9ec8-6ae837fbe086"
+            "id": "9e8adc55-fc18-47a5-ae3f-4ae77b56924f"
           },
           {
             "name": "Xiang Yang Hong 06 - Research Vessel",
@@ -1236,7 +1739,7 @@
             "description": "Chinese research vessel - Active multi-beam sonar, unusual radar sweeps, satellite uplink bursts",
             "scenario": "selat_melaka",
             "anomaly_score": 78,
-            "id": "deec9b8d-1550-4c48-8fbf-afd8b4ff22a3"
+            "id": "9b8a7b3b-186c-4544-8fbc-800ecbce5c22"
           },
           {
             "name": "VLCC TI Europe - Radar Fault",
@@ -1253,31 +1756,31 @@
             "description": "Malfunctioning radar causing interference with Port Klang VTS",
             "scenario": "selat_melaka",
             "interference_source": true,
-            "id": "ef92c691-0eb0-4a0c-aa8c-85192ccdeec5"
+            "id": "daf26939-dce7-439a-865d-99c02efb11ef"
           }
         ],
-        "loaded_at": "2025-12-12T10:06:32.450969+00:00"
+        "loaded_at": "2025-12-12T10:31:09.964015+00:00"
       }
     },
     {
       "test_name": "Scenario scenario_1 - Name Match",
       "success": true,
       "details": "Found: SELAT MELAKA GUARDIAN",
-      "timestamp": "2025-12-12T10:06:32.455221",
+      "timestamp": "2025-12-12T10:31:09.967782",
       "response_data": null
     },
     {
       "test_name": "Scenario scenario_1 - Emitters",
       "success": true,
       "details": "Found 10 emitters",
-      "timestamp": "2025-12-12T10:06:32.455240",
+      "timestamp": "2025-12-12T10:31:09.967804",
       "response_data": null
     },
     {
       "test_name": "Get Scenario - RAJAWALI SHIELD",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.487829",
+      "timestamp": "2025-12-12T10:31:10.003924",
       "response_data": {
         "id": "scenario_2",
         "name": "RAJAWALI SHIELD",
@@ -1340,7 +1843,7 @@
             "description": "11th Battalion Royal Malay Regiment - Infantry position",
             "scenario": "rajawali",
             "callsign": "HARIMAU-6",
-            "id": "d8cb04c6-b623-45eb-ab6d-0f0b638467bc"
+            "id": "1f1a71f6-e4b1-4455-b6c8-f5bcd9f9a743"
           },
           {
             "name": "PASKAL Team - Zodiac Insert",
@@ -1357,7 +1860,7 @@
             "description": "PASKAL special forces inserting via Zodiac",
             "scenario": "rajawali",
             "callsign": "IKAN-1",
-            "id": "ab947234-cae9-4c03-857e-148c8df6126e"
+            "id": "a265b62e-93d9-439e-aa4e-c15007b1ff3d"
           },
           {
             "name": "EC-725 Caracal - Overwatch",
@@ -1374,7 +1877,7 @@
             "description": "EC-725 helicopter providing overwatch - Hot extraction standby",
             "scenario": "rajawali",
             "callsign": "NURI-9",
-            "id": "06b8d565-1784-4eab-9d9c-4af0075df5ed"
+            "id": "a8e96b74-20c3-48f9-bb02-62feb72bb661"
           },
           {
             "name": "Tanjung Labian Radar",
@@ -1390,7 +1893,7 @@
             "affiliation": "friendly",
             "description": "Coastal radar station - ESSCOM Sector 4 coverage",
             "scenario": "rajawali",
-            "id": "5f337759-9b98-47ee-8775-196f20eb5e07"
+            "id": "7fb55033-cceb-4239-901a-de072d83d362"
           },
           {
             "name": "KFR Signal 1 - Baofeng Encrypted",
@@ -1408,7 +1911,7 @@
             "scenario": "rajawali",
             "voice_match": "ASG Sub-leader Ali - 87% confidence",
             "anomaly_score": 95,
-            "id": "4885ff4e-5ae9-45b9-9b2a-311142fdb712"
+            "id": "037b2bff-565a-4b24-8863-688ba75485f8"
           },
           {
             "name": "KFR Pump Boat 1",
@@ -1425,7 +1928,7 @@
             "description": "Militant pump boat - 3 persons detected",
             "scenario": "rajawali",
             "anomaly_score": 88,
-            "id": "0585ebeb-157a-4bfa-bc54-d18b88d12b99"
+            "id": "3007c580-5b1d-4066-b2fd-85d2bf46903e"
           },
           {
             "name": "KFR Pump Boat 2",
@@ -1442,7 +1945,7 @@
             "description": "Militant pump boat - 3 persons detected",
             "scenario": "rajawali",
             "anomaly_score": 86,
-            "id": "d694c420-1847-4c42-9069-632a07c33e1c"
+            "id": "2464127b-24a2-4e36-9383-a1edf317216d"
           },
           {
             "name": "Smuggler Burst Signal",
@@ -1459,7 +1962,7 @@
             "description": "Cigarette/arms smuggling - Burst transmission every 5 min - Pattern matches known smugglers",
             "scenario": "rajawali",
             "anomaly_score": 72,
-            "id": "433d2954-3887-4387-9095-4074fb8761d0"
+            "id": "41fd7401-0530-41ed-9f23-a3e2243f9f09"
           },
           {
             "name": "DJI Mavic 3 - Recon Drone",
@@ -1481,31 +1984,31 @@
               "distance_m": 800
             },
             "anomaly_score": 85,
-            "id": "2c299fec-59fe-4c53-a17f-9ddaa1ee1abf"
+            "id": "2583cd0b-80f0-427b-87a5-52ae0a23d957"
           }
         ],
-        "loaded_at": "2025-12-12T10:06:32.484865+00:00"
+        "loaded_at": "2025-12-12T10:31:09.999804+00:00"
       }
     },
     {
       "test_name": "Scenario scenario_2 - Name Match",
       "success": true,
       "details": "Found: RAJAWALI SHIELD",
-      "timestamp": "2025-12-12T10:06:32.488361",
+      "timestamp": "2025-12-12T10:31:10.004509",
       "response_data": null
     },
     {
       "test_name": "Scenario scenario_2 - Emitters",
       "success": true,
       "details": "Found 9 emitters",
-      "timestamp": "2025-12-12T10:06:32.488380",
+      "timestamp": "2025-12-12T10:31:10.004525",
       "response_data": null
     },
     {
       "test_name": "Get Scenario - NUSANTARA SPECTRUM",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:32.524754",
+      "timestamp": "2025-12-12T10:31:10.042885",
       "response_data": {
         "id": "scenario_3",
         "name": "NUSANTARA SPECTRUM",
@@ -1575,7 +2078,7 @@
             "description": "Auxiliary Oiler Replenishment supporting SCS operations",
             "scenario": "nusantara",
             "callsign": "LOGISTIK-1",
-            "id": "edd96756-04a2-40b5-917b-7ab7566c912b"
+            "id": "3d1499be-f7da-464c-94b4-0c79a236927e"
           },
           {
             "name": "FA-18D Hornet 1 - CAP",
@@ -1594,7 +2097,7 @@
             "description": "TUDM fighter on Combat Air Patrol with SUPER NASA radar",
             "scenario": "nusantara",
             "callsign": "HELANG-1",
-            "id": "e6a895cb-6139-4318-88d8-9839d52768d5"
+            "id": "e8c9ee20-479f-4269-b3ae-e75db98f00e4"
           },
           {
             "name": "FA-18D Hornet 2 - CAP",
@@ -1613,7 +2116,7 @@
             "description": "TUDM fighter wingman - Combat Air Patrol",
             "scenario": "nusantara",
             "callsign": "HELANG-2",
-            "id": "852d503b-d7f9-4c30-b9f5-5c8729b1c315"
+            "id": "7ffba779-e97b-4eda-a0b9-4e51882e1c94"
           },
           {
             "name": "KD Rencong - Future LCS",
@@ -1632,7 +2135,7 @@
             "description": "MEKO-class LCS with Thales NS 100 radar - Sovereignty patrol",
             "scenario": "nusantara",
             "callsign": "DAULAT-1",
-            "id": "ac16cc1c-94e6-43ae-acad-3791e9de289b"
+            "id": "3b4f0363-863a-4661-87a3-b3d8570a2828"
           },
           {
             "name": "Platform Duyong-A - PETRONAS",
@@ -1649,7 +2152,7 @@
             "description": "PETRONAS gas platform - Critical infrastructure (40% of national gas)",
             "scenario": "nusantara",
             "production_value_usd_day": 15000000,
-            "id": "bfa80ca4-5313-41bd-8a10-1f258ddd979e"
+            "id": "fa28cd08-6cd8-44a2-94a5-a2d2f43a7339"
           },
           {
             "name": "CCG 5901 - Mega Cutter",
@@ -1667,7 +2170,7 @@
             "scenario": "nusantara",
             "jamming_active": true,
             "escalation_risk": 0.34,
-            "id": "d207a546-96e5-4717-9cf8-7d2f3dd85809"
+            "id": "ff96fa1e-b91e-400d-a86a-1390f853ecd1"
           },
           {
             "name": "Maritime Militia Vessel 1",
@@ -1684,7 +2187,7 @@
             "description": "Little Blue Men - Fishing vessel creating swarm pattern",
             "scenario": "nusantara",
             "ais_status": "civilian",
-            "id": "53bccf02-f8bd-482b-a19e-c9e2a450c405"
+            "id": "39cb8877-6c85-401c-8514-acd465b726a1"
           },
           {
             "name": "Maritime Militia Vessel 2",
@@ -1700,7 +2203,7 @@
             "affiliation": "hostile",
             "description": "Little Blue Men - Coordinated movement pattern",
             "scenario": "nusantara",
-            "id": "d06edb4d-2f72-4dc1-aca0-cb03b9641431"
+            "id": "91dc2e9f-111d-4b26-b84e-73d665ded5f0"
           },
           {
             "name": "Maritime Militia Vessel 3",
@@ -1716,7 +2219,7 @@
             "affiliation": "hostile",
             "description": "Little Blue Men - Spectrum chaos creation",
             "scenario": "nusantara",
-            "id": "9f048265-679d-4ffd-a4b6-82dbb1cb4c97"
+            "id": "69e4fa44-787e-4f96-a45b-eaa43b75cb99"
           },
           {
             "name": "Maritime Militia Vessel 4",
@@ -1732,7 +2235,7 @@
             "affiliation": "hostile",
             "description": "Militia vessel - VHF crowding tactics",
             "scenario": "nusantara",
-            "id": "c1d6f64f-5650-46dc-adef-5dfb41a95063"
+            "id": "2d70245f-e711-41d8-a2ad-a037fc86c270"
           },
           {
             "name": "Maritime Militia Vessel 5",
@@ -1748,7 +2251,7 @@
             "affiliation": "hostile",
             "description": "Militia vessel - Exclusion zone approach",
             "scenario": "nusantara",
-            "id": "a88ea0e9-d0b0-4b4c-93c0-d4c929569d29"
+            "id": "0d282d41-caf4-4ba7-a19c-529631c9bfc8"
           },
           {
             "name": "Maritime Militia Vessel 6",
@@ -1764,7 +2267,7 @@
             "affiliation": "hostile",
             "description": "Militia vessel - Pattern indicates coordinated probe",
             "scenario": "nusantara",
-            "id": "9e7c3629-1b08-4d74-b7a6-e781700351fd"
+            "id": "0706e470-fb69-421a-9b4e-5d69cde96132"
           },
           {
             "name": "Type 052D Kunming - Destroyer",
@@ -1782,7 +2285,7 @@
             "description": "PLA Navy destroyer over-the-horizon - Collecting MAF radar signatures",
             "scenario": "nusantara",
             "sigint_active": true,
-            "id": "59581bec-1402-484e-86cd-e9db7fc6c833"
+            "id": "73c7bd86-b8fc-4192-9058-c31c52c8fc8f"
           },
           {
             "name": "H-6K Elint Aircraft",
@@ -1799,7 +2302,7 @@
             "description": "Electronic reconnaissance aircraft probing MAF air defense radar",
             "scenario": "nusantara",
             "sigint_active": true,
-            "id": "185b4659-8358-4e1d-9366-f930a01f4498"
+            "id": "68f58cc1-3ab5-4005-a3b5-7b0b714cad9e"
           },
           {
             "name": "Yaogan Satellite - Overhead",
@@ -1816,36 +2319,36 @@
             "description": "Yaogan satellite overhead in 15 minutes - SAR imaging capability",
             "scenario": "nusantara",
             "pass_time_minutes": 15,
-            "id": "3b05db4d-3160-4976-9908-487e254d8ce4"
+            "id": "37664b70-b924-4cc5-a4a7-c53acd80edfe"
           }
         ],
-        "loaded_at": "2025-12-12T10:06:32.521710+00:00"
+        "loaded_at": "2025-12-12T10:31:10.039911+00:00"
       }
     },
     {
       "test_name": "Scenario scenario_3 - Name Match",
       "success": true,
       "details": "Found: NUSANTARA SPECTRUM",
-      "timestamp": "2025-12-12T10:06:32.525162",
+      "timestamp": "2025-12-12T10:31:10.043365",
       "response_data": null
     },
     {
       "test_name": "Scenario scenario_3 - Emitters",
       "success": true,
       "details": "Found 15 emitters",
-      "timestamp": "2025-12-12T10:06:32.525178",
+      "timestamp": "2025-12-12T10:31:10.043381",
       "response_data": null
     },
     {
       "test_name": "AI Chat - Malaysian Query",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:42.444469",
+      "timestamp": "2025-12-12T10:31:16.818477",
       "response_data": {
-        "response": "**PROJEK HALIMUN \u2013 LAPORAN ANCAMAN SEMASA**\n\n**Situasi Ancamam Terkini:**\nPROJEK HALIMUN mengesan **19 emitters aktif**, dengan **8 daripadanya diklasifikasikan sebagai hostile**. Ini menandakan tahap ancaman **TINGGI**.\n\n**Ancaman Dikesan:**\n*   **ELINT (Electronic Intelligence):** Menunjukkan pengumpulan maklumat isyarat elektronik, kemungkinan untuk ISR (Intelligence, Surveillance, and Reconnaissance).\n*   **Komunikasi (Communication):** Isyarat komunikasi anomali, mungkin antara unit hostile atau arahan.\n*   **Radar (Radar):** Penggunaan radar aktif, boleh menunjukkan pengesanan atau penjejakan.\n*   **Sonar (Sonar):** Isyarat sonar, menandakan kehadiran aset maritim bawah air atau keupayaan ASW (Anti-Submarine Warfare).\n\n**Analisis & Keyakinan:**\n*   **Keyakinan: 92%**\n*   Corak emisi anomali dari 8 aset hostile ini menunjukkan keupayaan pelbagai dimensi, berpotensi untuk pengumpulan data risikan atau tujuan agresif. Analisis pola-of-life (PoL) tidak sepadan dengan aktiviti maritim biasa.\n\n**Cadangan Tindakan Serta-Merta:**\n1.  **Peningkatan Kesiapsiagaan:** Aset TLDM dan TUDM di kawasan operasi perlu tingkatkan tahap kesiapsiagaan (DEFCON) ke tahap **ALPHA 2**.\n2.  **Pemantauan Udara:** Kerahkan aset ISR udara seperti **EC-725 Super Cougar** atau **F/A-18D Hornet** (jika dalam jarak operasi) untuk pengesahan visual dan pemantauan spektrum.\n3.  **Pengerahan Maritim:** **KD Lekiu** atau **KD Rencong** disarankan untuk meningkatkan kehadiran di lokasi strategik, bersedia untuk tindak balas proporsional. Aktifkan sistem ESM/ECM.\n\n**Implikasi Kos & Operasi:**\n*   **Anggaran Kos:** **RM 450,000 \u2013 RM 600,000** bagi operasi pemantauan dan peningkatan kesiapsiagaan selama 24 jam pertama, bergantung pada jumlah sortie dan aset yang dikerahkan.\n*   **Prinsip Operasi:** Kekalkan doktrin neutraliti strategik Malaysia. Tindak balas harus **proporsional, bukan-kinetik** kecuali provokasi langsung dan ancaman kedaulatan terbukti berlaku. Matlamat utama adalah de-eskalasi dan pengumpulan bukti diplomatik.\n\n**Halimun menjadi perisai senyap angkasa memayungi negara.**",
+        "response": "**HALIMUN ADVISORY \u2013 Threat Assessment**\n\n**Current Scenario:** Active Monitoring\n\n**Situasi Ancaman:**\n\nAnalisis semasa mengesan **38 entiti pemancar aktif** (active emitters) di kawasan operasi. Daripada jumlah ini, **16 entiti diklasifikasikan sebagai hostile**, menunjukkan peningkatan signifikan dalam potensi ancaman.\n\n**Perincian Ancaman:**\n*   **Jumlah Emitter Hostile:** 16 entiti (42.1% daripada jumlah aktif).\n*   **Jenis Ancaman:**\n    *   **ELINT (Electronic Intelligence):** Menunjukkan cubaan pengumpulan maklumat isyarat elektronik, berpotensi mengesan kemampuan dan formasi ATM.\n    *   **Communication:** Aktiviti komunikasi yang mencurigakan, berpotensi koordinasi aktiviti haram atau pengumpulan maklumat.\n    *   **Radar:** Kehadiran sistem radar hostile, menunjukkan kemampuan pengesanan dan penjejakan.\n    *   **Sonar:** Ancaman bawah air, berpotensi melibatkan aset maritim tidak dikenal pasti atau submarines.\n\n**Penilaian Keseluruhan:**\nSituasi ancaman adalah **TINGGI (HIGH)**. Kehadiran pelbagai jenis ancaman (ELINT, Communication, Radar, Sonar) secara serentak dari entiti hostile menunjukkan ancaman multi-domain yang kompleks dan berpotensi untuk pengumpulan risikan agresif atau persediaan tindakan. Keupayaan ELINT dan Sonar khususnya memerlukan perhatian serius.\n\n**Confidence Level:** 95% (Berdasarkan data emitter yang dikesan secara langsung)\n\n**Cost Implications:** RM 250,000 \u2013 RM 500,000 (Anggaran kos awal untuk peningkatan pengawasan, pengerahan aset tambahan seperti P-8A, CN-235 Maritime Patrol Aircraft, atau kapal seperti KD Lekiu/KD Jebat untuk penjejakan dan pengesahan, serta analisis risikan berterusan).\n\n**Aset MAF Terlibat:**\n*   **TUDM:** Penggunaan aset ISR (Intelligence, Surveillance, Reconnaissance) seperti CN-235 MPA atau F/A-18D untuk pengesahan visual dan ELINT lanjut.\n*   **TLDM:** Pengerahan aset seperti KD Laksamana Hang Nadim (Corvette) atau KD Selangor (Offshore Patrol Vessel) untuk kehadiran di kawasan, terutamanya bagi ancaman sonar.\n*   **ESSCOM/TDM:** Peningkatan readiness di pos-pos pemerhati darat jika ancaman mempunyai kaitan dengan daratan.\n\n**Cadangan Tindakan:** Tingkatkan tahap kesiapsiagaan (readiness level) dan laksanakan pengesahan sumber ancaman segera. Nasihatkan semua unit operasi untuk berada dalam mod **Silent Running** (EMCON) jika sesuai untuk mengurangkan jejak elektronik.\nStatus ini memerlukan pemantauan berterusan dan penilaian yang kritikal.",
         "context": {
-          "active_emitters": 19,
-          "hostile_count": 8,
+          "active_emitters": 38,
+          "hostile_count": 16,
           "threat_types": [
             "elint",
             "communication",
@@ -1859,60 +2362,60 @@
     {
       "test_name": "AI Chat - Structure",
       "success": true,
-      "details": "Response length: 2090 chars, Context keys: ['active_emitters', 'hostile_count', 'threat_types', 'current_scenario']",
-      "timestamp": "2025-12-12T10:06:42.445075",
+      "details": "Response length: 2447 chars, Context keys: ['active_emitters', 'hostile_count', 'threat_types', 'current_scenario']",
+      "timestamp": "2025-12-12T10:31:16.819076",
       "response_data": null
     },
     {
       "test_name": "AI Chat - Malaysian Context",
       "success": true,
       "details": "Response contains Malaysian military context",
-      "timestamp": "2025-12-12T10:06:42.445238",
+      "timestamp": "2025-12-12T10:31:16.819253",
       "response_data": null
     },
     {
       "test_name": "AI Analysis - KD Lekiu",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:54.179513",
+      "timestamp": "2025-12-12T10:31:33.303602",
       "response_data": {
         "emitter_id": "KD Lekiu - TLDM Frigate",
         "emitter_name": "KD Lekiu - TLDM Frigate",
-        "analysis": "**PROJEK HALIMUN AI ASSISTANT - ANALISIS SPEKTRUM ELEKTRONIK (FRIENDLY ASSET)**\n\n**Emitter ID:** KD Lekiu (FFG 29) - TLDM Frigate\n**Affiliation:** Friendly (Malaysia)\n**Operational Context:** OP PASIR, Selat Melaka Guardian\n\n---\n\n**1. Penilaian Ancaman (Threat Assessment)**\n\n*   **Confidence Level:** 100%\n*   **Assessment:** **TIADA ANCAMAN (NO THREAT).** Emitter ini adalah KD Lekiu, sebuah frigat TLDM, aset negara kita. Pancaran radar pada frekuensi 8500-9500 MHz adalah konsisten dengan sistem radar navigasi/pencarian permukaan (X-band) yang digunakan untuk tugas rondaan dan pengawasan maritim. Ini adalah profil pancaran biasa bagi aset TLDM yang beroperasi secara sah.\n\n---\n\n**2. Misi Kemungkinan (Likely Mission)**\n\n*   **Confidence Level:** 100%\n*   **Mission:** Berdasarkan maklumat, KD Lekiu sedang melaksanakan **tugas rondaan OP PASIR (Selat Melaka Guardian)**.\n    *   **Objektif Utama:** Membanteras lanun, jenayah rentas sempadan (penyeludupan, pemerdagangan manusia), melindungi laluan perkapalan antarabangsa, dan menguatkuasakan undang-undang maritim di Selat Melaka.\n    *   **Fungsi Radar:** Pancaran ini menyokong operasi pengawasan permukaan, pengesanan sasaran (kapal dagang, bot kecil), dan navigasi selamat dalam persekitaran trafik tinggi Selat Melaka.\n*   **Cost Implication:** Kehadiran dan operasi KD Lekiu di OP PASIR adalah pelaburan strategik (anggaran kos operasi harian signifikan untuk aset utama TLDM) untuk menjamin keselamatan maritim dan kestabilan ekonomi negara, memastikan aliran perdagangan tanpa gangguan. Kegagalan operasi boleh menyebabkan kerugian bilion ringgit kepada ekonomi serantau.\n\n---\n\n**3. Tindakan Balas Disyorkan (Recommended Countermeasures)**\n\n*   **Confidence Level:** 100%\n*   **Recommendation:** **TIADA TINDAKAN BALAS DIPERLUKAN (NO COUNTERMEASURES REQUIRED).**\n    *   Sebagai aset rakan, sebarang tindakan balas (ECM/ECCM) adalah tidak relevan dan berpotensi menyebabkan salah faham.\n    *   **Tindakan Disyorkan:** Sebaliknya, fokus pada **Pengenalpastian Positif (Positive Identification - PID)** dan **Penyelarasan (Coordination)**.\n        *   Sahkan identiti melalui sistem IFF (Identification Friend or Foe) atau komunikasi radio jika perlu.\n        *   Sahkan kedudukan KD Lekiu dalam Maritime Domain Awareness (MDA) picture dan integrate data untuk situasi gambaran yang lebih jelas untuk semua aset MAF yang beroperasi di kawasan tersebut.\n        *   Pastikan semua aset TLDM, TUDM, TDM, dan MMEA sedar akan kehadiran dan lokasi aset sahabat untuk mengelakkan insiden misidentification atau fraticide.\n\n---\n\n**4. Kedudukan Rantaian Memusnah (Kill Chain Position)**\n\n*   **Confidence Level:** 100%\n*   **Position:** **TIDAK BERKENAAN (NOT APPLICABLE).** Konsep rantaian memusnah (Find, Fix, Track, Target, Engage, Assess) adalah untuk ancaman atau sasaran musuh.\n    *   KD Lekiu adalah aset sahabat yang berperanan dalam **Rantaian Kesedaran Situasi (Situational Awareness Chain)** dan **Rantaian Perlindungan (Protection Chain)** untuk operasi MAF. Data dari radarnya menyumbang kepada pemahaman domain maritim kita sendiri.\n\n---\n\n**Ringkasan Taktikal:**\nPancaran dari KD Lekiu ini adalah petunjuk positif kehadiran aset TLDM yang sedang melaksanakan misi menjaga kedaulatan dan keselamatan negara di Selat Melaka. Pastikan semua sistem pengurusan medan perang (BMS) dan MDA mengklasifikasikan emitter ini sebagai 'FRIENDLY' dan mengintegrasikan maklumatnya untuk meningkatkan kesedaran situasi bersama.\n\n\"Halimun menjadi perisai senyap angkasa memayungi negara\"",
-        "timestamp": "2025-12-12T10:06:54.174970+00:00"
+        "analysis": "Laporan Analisis Emitter PROJEK HALIMUN:\n\n**TARGET:** KD Lekiu - TLDM Frigate (Radar Emission)\n**STATUS:** FRIENDLY ASSET\n\n---\n\n1.  **Threat Assessment:**\n    *   **Status:** *No threat detected*. Emitter merupakan radar daripada KD Lekiu, aset TLDM yang beroperasi secara sah dalam kawasan operasi.\n    *   **Frequency Analysis:** Frekuensi 8500-9500 MHz (X-band) adalah konsisten dengan radar navigasi, pencarian permukaan (surface search radar), dan kemungkinan radar kawalan tembakan (fire control radar) yang standard untuk sebuah frigat moden.\n    *   **EW Posture:** Kehadiran emisi ini adalah *expected* dan menyumbang kepada Maritime Domain Awareness (MDA) positif untuk Angkatan Tentera Malaysia (ATM).\n    *   **Confidence Level:** 99% (Berpandukan pengenalan jelas sebagai aset TLDM dan operasi diketahui).\n    *   **Cost Implication:** N/A (Tiada ancaman, tiada kos tindak balas langsung. Kos operasi aset ini adalah peruntukan sedia ada TLDM).\n\n2.  **Likely Mission:**\n    *   **Primary Mission:** Berdasarkan deskripsi \"TLDM Frigate on OP PASIR patrol duty,\" misi utama adalah **Operasi PASIR di Selat Melaka**.\n    *   **Operational Tasks:** Ini melibatkan tugas-tugas seperti:\n        *   Anti-piracy operations and deterrence.\n        *   Maritime law enforcement support to MMEA and PDRM.\n        *   Sovereignty patrols and safeguarding Malaysian waters.\n        *   Search and Rescue (SAR) operations readiness.\n        *   Monitoring maritime traffic for suspicious activities.\n    *   **Confidence Level:** 95% (Dinyatakan secara langsung dalam deskripsi dan konsisten dengan peranan frigat di kawasan tersebut).\n\n3.  **Recommended Countermeasures (for other MAF assets):**\n    *   **Identification & Correlation:**\n        *   **ACTION:** Pastikan pengenalan IFF (Identify Friend or Foe) yang tepat dan korelasi data emisi dengan sistem Tactical Data Link (e.g., Link 11/16) atau sistem Blue Force Tracking (BFT) untuk mengekalkan Friendly Force Track (FFT) yang sahih.\n        *   **REASONING:** Mengelakkan salah identifikasi atau potensi friendly fire insiden.\n        *   **COST:** Minimal, mainly system processing load and secure communication bandwidth (~RM 500/hour for centralized data fusion).\n    *   **Spectrum Management:**\n        *   **ACTION:** Acknowledge kehadiran emisi X-band ini dalam Persekitaran Spektrum Elektromagnetik (EMS) untuk memastikan deconfliction frekuensi, terutama jika aset MAF atau MMEA lain beroperasi di kawasan berhampiran dengan radar serupa.\n        *   **REASONING:** Mencegah interference atau clutter yang tidak perlu dalam EW picture.\n        *   **COST:** Minimal, part of routine EW monitoring operations.\n    *   **Situational Awareness Enhancement:**\n        *   **ACTION:** Teruskan pemantauan lokasi dan status operasi KD Lekiu sebagai sebahagian daripada Common Operational Picture (COP) untuk OP PASIR.\n        *   **REASONING:** KD Lekiu adalah aset kritikal yang menyumbang kepada MDA di Selat Melaka.\n        *   **COST:** Incidental to existing C4ISR infrastructure.\n\n4.  **Kill Chain Position:**\n    *   KD Lekiu, being a **friendly asset**, is **NOT** a target within a hostile kill chain.\n    *   Sebaliknya, emisi radarnya dan data operasinya menyumbang secara langsung kepada fasa \"Find\" dan \"Track\" dalam *kill chain Angkatan Tentera Malaysia sendiri* terhadap ancaman maritim (e.g., pirates, smugglers).\n    *   **Fungsi dalam MAF Kill Chain:**\n        *   **Find:** Radar KD Lekiu (X-band) digunakan untuk mengesan dan mengesan kontak permukaan yang mencurigakan di Selat Melaka.\n        *   **Track:** Memberi data penjejakan yang berterusan untuk integrasi ke dalam Common Operational Picture (COP) MAF, membolehkan aset lain (seperti helikopter EC-725 atau bot interseptor TLDM) untuk Fix dan Target ancaman sebenar.\n    *   **Confidence Level:** 100% (Konsep fundamental dalam peperangan elektronik dan operasi tentera).\n    *   **Cost Implication:** N/A (KD Lekiu adalah pelaburan dalam kemampuan \"Find\" & \"Track\" untuk melindungi negara, bukan kos sebagai sasaran).\n\n---\n**Halimun menjadi perisai senyap angkasa memayungi negara.**",
+        "timestamp": "2025-12-12T10:31:33.299029+00:00"
       }
     },
     {
       "test_name": "AI Analysis - Structure",
       "success": true,
-      "details": "Analyzed: KD Lekiu - TLDM Frigate, Analysis length: 3543 chars",
-      "timestamp": "2025-12-12T10:06:54.180176",
+      "details": "Analyzed: KD Lekiu - TLDM Frigate, Analysis length: 4128 chars",
+      "timestamp": "2025-12-12T10:31:33.304216",
       "response_data": null
     },
     {
       "test_name": "AI Analysis - Tactical Content",
       "success": true,
       "details": "Analysis contains tactical assessment",
-      "timestamp": "2025-12-12T10:06:54.180249",
+      "timestamp": "2025-12-12T10:31:33.304388",
       "response_data": null
     },
     {
       "test_name": "Activate Scenario 1",
       "success": true,
       "details": "Status: 200",
-      "timestamp": "2025-12-12T10:06:54.237931",
+      "timestamp": "2025-12-12T10:31:33.445229",
       "response_data": {
         "scenario_id": "scenario_1",
         "status": "activated",
         "emitters_loaded": 10,
-        "timestamp": "2025-12-12T10:06:54.234769+00:00"
+        "timestamp": "2025-12-12T10:31:33.442943+00:00"
       }
     },
     {
       "test_name": "Scenario Activation - Success",
       "success": true,
       "details": "Scenario scenario_1: activated, Emitters loaded: 10",
-      "timestamp": "2025-12-12T10:06:54.238431",
+      "timestamp": "2025-12-12T10:31:33.445854",
       "response_data": null
     }
   ]
