@@ -22,7 +22,7 @@ client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
 # Create the main app
-app = FastAPI(title="AEGIS MIND - Sistem Sokongan Keputusan Peperangan Elektronik ATM")
+app = FastAPI(title="PROJEK HALIMUN - Himpunan Analisis Lindungan Intelijen Medan Udara Negara")
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
