@@ -21,12 +21,13 @@ const AIConsole = ({ selectedEmitter }) => {
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
-  // Sample queries
+  // Sample queries - MAF specific
   const sampleQueries = [
-    "What's the best counter for S-400 in tracking mode?",
-    "Analyze all Chinese naval radars",
-    "Recommend ECM for current threat environment",
-    "What's the kill chain status?"
+    "What countermeasures for CCG jammers in SCS?",
+    "Analyze pirate activity in Selat Melaka",
+    "Recommend EW against Abu Sayyaf comms",
+    "Status PETRONAS Kasawari protection",
+    "Joint spectrum plan TLDM-TUDM"
   ];
 
   useEffect(() => {
