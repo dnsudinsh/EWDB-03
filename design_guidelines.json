@@ -1,0 +1,120 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "AEGIS MIND",
+      "archetype": "Stealth Command",
+      "vibe": "Tactical, High-Precision, Situational Awareness",
+      "core_philosophy": "Information Dominance. Every pixel must serve a decision."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Chivo, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "usage_rules": {
+        "headings": "Uppercase, tracking-tight, bold weights (700/900). Use for module titles and alerts.",
+        "body": "High legibility, neutral weights. Use for logs and descriptions.",
+        "mono": "MANDATORY for all numerical data, coordinates, timestamps, and signal frequencies."
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#020617",
+          "paper": "#0f172a",
+          "overlay": "rgba(2, 6, 23, 0.8)"
+        },
+        "text": {
+          "primary": "#f8fafc",
+          "secondary": "#94a3b8",
+          "muted": "#475569"
+        },
+        "status": {
+          "hostile": "#ef4444",
+          "friendly": "#0ea5e9",
+          "unknown": "#f59e0b",
+          "neutral": "#64748b",
+          "system_ok": "#22c55e"
+        },
+        "accent": {
+          "primary": "#0ea5e9",
+          "glow": "rgba(14, 165, 233, 0.5)"
+        },
+        "border": {
+          "default": "#1e293b",
+          "active": "#38bdf8"
+        }
+      },
+      "rules": {
+        "gradients": "Avoid soft gradients. Use sharp linear gradients for 'scanning' effects only.",
+        "transparency": "Use glassmorphism (backdrop-blur-md) for floating panels, but keep opacity high (90%+) for readability.",
+        "glow": "Use text-shadow or box-shadow to create a 'luminescent display' effect on active elements."
+      }
+    },
+    "layout": {
+      "grid_system": "The Cockpit Grid",
+      "spacing": "Compact. Use 'gap-2' or 'gap-4'. Information density is a priority.",
+      "container_style": "Sharp edges (rounded-none or rounded-sm). 1px borders are mandatory for all panels.",
+      "z_index": {
+        "map": 0,
+        "panels": 10,
+        "overlays": 20,
+        "modals": 50,
+        "alerts": 100
+      }
+    },
+    "components": {
+      "buttons": {
+        "style": "Rectangular, uppercase text, tracking-widest. Outline styles preferred for secondary actions.",
+        "interaction": "Instant feedback. No slow fades. 'Click' feel."
+      },
+      "cards": {
+        "style": "HUD Panels. Dark background (#0f172a), light border (#1e293b). Optional: 45-degree cut corners on top-right.",
+        "header": "Distinct header area with bottom border and monospace title."
+      },
+      "inputs": {
+        "style": "Flat, dark background, bottom border focus. Monospace text."
+      },
+      "visual_enhancers": {
+        "scanlines": "Overlay a subtle repeating linear gradient to mimic CRT/LCD pixel grid.",
+        "corner_brackets": "Use SVG or pseudo-elements to add 'framing brackets' to key data containers."
+      }
+    },
+    "assets": {
+      "icons": "Lucide React (default). Use 'Target', 'Radar', 'Shield', 'Zap', 'Radio' heavily.",
+      "images": {
+        "fighter_jet": "https://images.unsplash.com/photo-1698480941509-5dd5f5a48a4e",
+        "tank": "https://images.unsplash.com/photo-1617977057066-fd7770ac48b5",
+        "ship": "https://images.unsplash.com/photo-1717713355296-66797ec58049",
+        "map_tiles": "CartoDB Dark Matter (https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png)"
+      }
+    },
+    "motion": {
+      "speed": "Fast (150ms - 200ms).",
+      "easing": "Ease-out-quad.",
+      "types": {
+        "panel_slide": "Slide in from edges.",
+        "alert_pulse": "Opacity pulse for critical warnings.",
+        "scan_sweep": "Linear gradient movement across maps/charts."
+      }
+    }
+  },
+  "implementation_guide": {
+    "tech_stack": {
+      "frontend": "React, Tailwind CSS, Framer Motion, Leaflet (react-leaflet), Recharts",
+      "icons": "lucide-react"
+    },
+    "file_structure_rules": {
+      "components": "Place reusable UI in /src/components/ui. Place domain components in /src/components/domain.",
+      "pages": "Place main views in /src/pages."
+    },
+    "universal_guidelines": [
+      "DO NOT use rounded-xl or rounded-2xl. Keep it sharp (rounded-sm or rounded-none).",
+      "DO NOT use bright white backgrounds. Always dark mode.",
+      "ALWAYS use 'data-testid' for interactive elements.",
+      "Ensure high contrast for text (WCAG AA).",
+      "Use 'JetBrains Mono' for all numbers and data tables."
+    ]
+  }
+}
