@@ -320,9 +320,7 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus:
-    - "Frontend Bug Fix Verification - Error Toast Spam"
-    - "Frontend Bug Fix Verification - Map Zoom Reset"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
