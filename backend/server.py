@@ -1113,7 +1113,7 @@ async def root():
 async def health_check():
     return {
         "status": "healthy",
-        "system": "AEGIS MIND",
+        "system": "PROJEK HALIMUN",
         "version": "1.0.0",
         "timestamp": datetime.now(timezone.utc).isoformat()
     }
