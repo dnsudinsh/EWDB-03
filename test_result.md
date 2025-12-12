@@ -170,15 +170,18 @@ backend:
 
   - task: "Countermeasures API"
     implemented: true
-    working: NA
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: NA
         agent: "main"
         comment: "Needs verification - endpoint exists with scenario-specific countermeasures"
+      - working: true
+        agent: "testing"
+        comment: "TESTED: GET /api/countermeasures returns 17 countermeasures with proper structure (name, technique_type, description, success_rate). All scenario-specific countermeasures available including Lumut EW Station Triangulation, KFR Behavioral Predictor, etc."
 
 frontend:
   - task: "Dashboard displays emitters on map"
